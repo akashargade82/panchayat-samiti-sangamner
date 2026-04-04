@@ -99,8 +99,8 @@ export const Header = () => {
             </div>
           </Link>
           <div className="hidden lg:flex items-center gap-4">
-             <img src="https://cdnbbsr.s3waas.gov.in/s385b75d04f478d3841e38eb64aefdb05a/uploads/2025/04/20250415379430117.png" alt="Digital India" className="h-10" />
-             <img src="https://cdnbbsr.s3waas.gov.in/s385b75d04f478d3841e38eb64aefdb05a/uploads/2025/04/202504111579669448.png" alt="Swachh Bharat" className="h-10" />
+            <img src="https://cdnbbsr.s3waas.gov.in/s385b75d04f478d3841e38eb64aefdb05a/uploads/2025/04/20250415379430117.png" alt="Digital India" className="h-10" />
+            <img src="https://cdnbbsr.s3waas.gov.in/s385b75d04f478d3841e38eb64aefdb05a/uploads/2025/04/202504111579669448.png" alt="Swachh Bharat" className="h-10" />
           </div>
         </div>
       </div>
@@ -144,10 +144,10 @@ export const Header = () => {
           </nav>
 
           <div className="lg:hidden flex w-full justify-between items-center py-2">
-             <span className="text-white font-bold text-sm">MENU</span>
-             <button className="p-2 text-white" onClick={() => setIsOpen(!isOpen)}>
-               {isOpen ? <X /> : <Menu />}
-             </button>
+            <span className="text-white font-bold text-sm">MENU</span>
+            <button className="p-2 text-white" onClick={() => setIsOpen(!isOpen)}>
+              {isOpen ? <X /> : <Menu />}
+            </button>
           </div>
         </div>
       </div>
@@ -213,7 +213,7 @@ export const Footer = () => {
               <Link to="/notices" className="hover:text-orange-gov flex items-center gap-1">» सूचना</Link>
               <Link to="/directory" className="hover:text-orange-gov flex items-center gap-1">» निर्देशिका</Link>
               <a href="https://www.maharashtra.gov.in" target="_blank" className="hover:text-orange-gov flex items-center gap-1">» महाराष्ट्र शासन</a>
-              <a href="https://nagarzp.gov.in" target="_blank" className="hover:text-orange-gov flex items-center gap-1">» जिल्हा परिषद अहिल्यानगर</a>
+              <a href="https://sangamnerps.netlify.app/" target="_blank" className="hover:text-orange-gov flex items-center gap-1">» जिल्हा परिषद पंचायत समिती संगमनेर</a>
             </div>
           </div>
           <div>
@@ -241,8 +241,18 @@ export const Footer = () => {
             ))}
           </div>
           <div className="text-center text-[11px] text-blue-200">
-            <p>© २०२४ पंचायत समिती संगमनेर. सर्व हक्क राखीव.</p>
-            <p className="mt-1">डिझाइन आणि विकसित: NIC अहिल्यानगर</p>
+            <p>© २०२6 पंचायत समिती संगमनेर. सर्व हक्क राखीव.</p>
+            <p className="mt-1">
+              डिझाइन आणि विकसित:{" "}
+              <a
+                href="https://avakinfotech.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:underline"
+              >
+                AVAK INFOTECH
+              </a>
+            </p>
           </div>
         </div>
       </div>

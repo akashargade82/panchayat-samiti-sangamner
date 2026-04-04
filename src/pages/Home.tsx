@@ -232,7 +232,7 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
               <div className="space-y-3">
                 {[
                   { name: 'महाराष्ट्र शासन',         url: 'https://www.maharashtra.gov.in' },
-                  { name: 'जिल्हा परिषद अहिल्यानगर',    url: 'https://nagarzp.gov.in' },
+                  { name: 'जिल्हा परिषद पंचायत समिती संगमनेर',    url: 'https://sangamnerps.netlify.app/' },
                   { name: 'आपले सरकार पोर्टल',        url: 'https://aaplesarkar.mahaonline.gov.in' },
                   { name: 'डिजिटल इंडिया',            url: 'https://www.digitalindia.gov.in' },
                   { name: 'महा-भूलेख',                url: 'https://mahabhulekh.maharashtra.gov.in' },
