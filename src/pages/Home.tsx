@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { Bell, FileText, Users, Info, ExternalLink, Phone, ShieldAlert, HeartPulse, Flame, Siren } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+import bdoImage from '../images/bdo.jpeg';
+
 // ─── Types (matching GpInformation structure) ───────────────────────────────
 interface GpInfoType {
   GPNAME?: string;
@@ -57,7 +59,7 @@ const STATIC_LEADERS = [
   {
     name: "मा.ना.श्री प्रविण अण्णासाहेब सिनारे",
     role: "गट विकास अधिकारी, संगमनेर",
-    image: "https://cdnbbsr.s3waas.gov.in/s385b75d04f478d3841e38eb64aefdb05a/uploads/2025/08/20250801671286796.jpg",
+    image: bdoImage,
   },
 ];
 
