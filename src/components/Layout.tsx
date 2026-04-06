@@ -42,7 +42,7 @@ const navItems = [
       { name: 'सेवा', path: '/citizens/services' },
       { name: 'सार्वजनिक सेवेचा अधिकार', path: '/citizens/rts' },
       { name: 'अर्ज', path: '/citizens/forms' },
-      { name: 'स्वयं पोर्टल', path: '/citizens/swayam' },
+      { name: 'स्वयम पोर्टल', path: '/citizens/swayam' },
     ],
   },
   { name: 'कागदपत्रे', path: '/documents' },
