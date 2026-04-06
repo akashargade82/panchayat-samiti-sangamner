@@ -637,7 +637,7 @@ const RtsSection = () => {
           <span className="text-sm font-bold">शीर्षक</span>
           <span className="text-sm font-bold">डाउनलोड करा</span>
         </div>
-        {RTS_CATEGORIES[activeTab].items.map((item, i) => (
+        {/* {RTS_CATEGORIES[activeTab].items.map((item, i) => (
           <div
             key={i}
             className={`grid grid-cols-2 px-4 py-3 items-center border-b border-gray-100 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'} hover:bg-blue-50 transition-colors`}
@@ -662,7 +662,10 @@ const RtsSection = () => {
               </a>
             </div>
           </div>
-        ))}
+        ))} */}
+         <div className="text-center py-12 text-gray-400 text-sm font-medium border border-gray-200 rounded-xl bg-gray-50">
+          कोणतीही सूचना उपलब्ध नाही.
+        </div>
       </div>
     </ContentPage>
   );
