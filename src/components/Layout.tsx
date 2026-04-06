@@ -69,7 +69,7 @@ export const Header = () => {
         <div className="container mx-auto px-4 flex justify-between items-center text-[12px]">
           <div className="flex gap-4">
             <span className="flex items-center gap-1"><Phone size={12} /> 0241-2355219</span>
-            <span className="flex items-center gap-1"><Mail size={12} /> ceozp.ahmednagar@maharashtra.gov.in</span>
+            <span className="flex items-center gap-1"><Mail size={12} /> 	bdosangamner@rediffmail.com</span>
           </div>
           <div className="flex gap-4 items-center">
             <div className="flex gap-2 border-r border-white/20 pr-4">
@@ -209,7 +209,7 @@ export const Footer = () => {
             <h3 className="text-lg font-bold mb-4 border-b border-orange-gov/30 pb-2 inline-block">महत्वाचे दुवे</h3>
             <div className="grid grid-cols-2 gap-2 text-sm text-blue-100">
               <Link to="/about/intro" className="hover:text-orange-gov flex items-center gap-1">» प्रस्तावना</Link>
-              <Link to="/schemes" className="hover:text-orange-gov flex items-center gap-1">» योजना</Link>
+              <Link to="/admin-depts/ps" className="hover:text-orange-gov flex items-center gap-1">» योजना</Link>
               <Link to="/notices" className="hover:text-orange-gov flex items-center gap-1">» सूचना</Link>
               <Link to="/directory" className="hover:text-orange-gov flex items-center gap-1">» निर्देशिका</Link>
               <a href="https://www.maharashtra.gov.in" target="_blank" className="hover:text-orange-gov flex items-center gap-1">» महाराष्ट्र शासन</a>

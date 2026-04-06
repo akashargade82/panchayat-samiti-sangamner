@@ -265,7 +265,7 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
                 </div>
                 <div className="flex gap-3">
                   <Bell size={18} className="text-orange-gov shrink-0" />
-                  <p>ceozp.ahmednagar@maharashtra.gov.in</p>
+                  <p>	bdosangamner@rediffmail.com</p>
                 </div>
               </div>
               <div className="mt-6">
@@ -290,7 +290,7 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
           <h2 className="text-2xl font-bold text-center mb-12 text-blue-gov">महत्वाच्या सेवा</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { name: 'योजना',       icon: <FileText className="text-orange-gov" />, path: '/schemes/state' },
+              { name: 'योजना',       icon: <FileText className="text-orange-gov" />, path: '/admin-depts/ps' },
               { name: 'निर्देशिका', icon: <Users    className="text-blue-gov"   />, path: '/directory'      },
               { name: 'नागरी सेवा', icon: <Info     className="text-orange-gov" />, path: '/citizens/services' },
               { name: 'कागदपत्रे',  icon: <FileText className="text-blue-gov"   />, path: '/documents'      },

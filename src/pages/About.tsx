@@ -24,49 +24,73 @@ export const ContentPage = ({ title, publishedDate, children }: PageProps) => {
 
 export const Introduction = () => (
   <ContentPage title="प्रस्तावना" publishedDate="१५ मार्च २०२४">
-    <p className="mb-4">
-     महाराष्ट्रामध्ये जिल्हा परिषद, पंचायत समिती, ग्रामपंचायत ही त्रिस्तरीय व्यवस्था अस्तित्वात येण्यापुर्वी ग्रामिण भागाच्या कामकाजासाठी लोकल बोर्ड ही संस्था काम पाहत होती. महाराष्ट्रामध्ये दि. ०१ मे १९६० या शुभदिनी तत्कालीन पंतप्रधान मा.पंडीत जवाहरलाल नेहरु यांच्या प्रमुख अध्यक्षतेखाली व तत्कालीन महाराष्ट्राचे पहिले मुख्यमंत्री मा. यशवंतरावजी चव्हाण यांचे प्रमुख उपस्थितीत जिल्हा परिषदांची स्थापना करण्यात आली.
-    </p>
-    <p className="mb-4">
-    पंचायत समिती संगमनेर जिल्हा परिषदेची स्थापना दि. ०२ मे १९६२ रोजी झाली आहे. मा.अध्यक्ष व मा. उपाध्यक्ष व पदाधिकारी यांची दि. १२ ऑगस्ट १९६२ रोजी निवड होऊन जिल्हा परिषद अस्तित्वात आली.
-    </p>
-    <p>
-    महाराष्ट्रातील ग्रामिण भागाचे सर्वांगीण विकासासाठी त्रिस्तरीय पद्धतीची लोकनियुक्त प्रशासकिय संस्था कायद्याने अस्तित्वात आली. या संस्थेचे काम नियमानुसार होण्यासाठी विधानसभेत कायदा करण्यात आला. जिल्हा परिषद व पंचायत समितीचे कामकाज जिल्हा परिषद व पंचायत समिती अधिनियम १९६१ व ग्रामपंचीयतीचे कामकाज मुंबई ग्रामपंचायत अधिनियम १९५८ अन्वये चालते.
-    </p>
-  </ContentPage>
+  <p className="mb-4">
+    संगमनेर हे महाराष्ट्र राज्यातील अहमदनगर जिल्ह्यातील एक महत्त्वाचे शहर व तालुक्याचे मुख्यालय आहे. हे शहर प्रवरा नदीच्या काठावर वसलेले असून ते अहमदनगर जिल्ह्यातील प्रमुख व्यापारी व औद्योगिक केंद्र म्हणून ओळखले जाते.
+  </p>
+
+  <p className="mb-4">
+    ‘संगमनेर’ हे नाव तीन नद्यांच्या संगमावरून पडले आहे. प्रवरा, म्हाळुंगी व अढळा या नद्यांचा संगम येथे होत असल्यामुळे या शहराला ‘संगमनेर’ असे नाव देण्यात आले आहे. 
+  </p>
+
+  <p className="mb-4">
+    संगमनेर हे शिक्षण, व्यापार व उद्योग क्षेत्रात विकसित झालेले शहर असून येथे वस्त्र, साखर व इतर उद्योगांचे मोठे जाळे आहे. तसेच हे शहर जिल्ह्यातील प्रमुख बाजारपेठ म्हणूनही प्रसिद्ध आहे.
+  </p>
+
+  <p>
+    भौगोलिक दृष्ट्या संगमनेर हे पुणे, नाशिक, मुंबई व औरंगाबाद या शहरांच्या मध्यभागी स्थित असल्यामुळे वाहतूक व व्यापारासाठी अत्यंत महत्त्वाचे केंद्र मानले जाते.
+  </p>
+</ContentPage>
 );
 
 export const VisionMission = () => (
-  <ContentPage title="दृष्टी आणि ध्येय" publishedDate="१५ मार्च २०२४">
-    <h2 className="text-xl font-bold mb-4">दृष्टी आणि ध्येय</h2>
-    <ul className="list-disc pl-6 space-y-2 mb-8">
-      <li>पंचायत समिती संगमनेर ग्रामीण क्षेत्रामध्ये मुलभुत सुविधा उपलब्ध होण्यासाठी तसेच स्वच्छ, सुंदर, व हरित ग्राम तयार करण्यासाठी विविध उपक्रम राबविणे.</li>
-      <li>विविध बचत गट तसेच महाराष्ट्र राज्य ग्रामीण जीवनोन्नती अभियानाद्वारे ग्रामस्थांचे जीवनमान उंचावण्यासाठी उपक्रम चालविणे.</li>
-      <li>विविध घरकुल योजनेअंतर्गत निवारा व निवारा विषयक सुविधा पुरविणे.</li>
-      <li>प्रशिक्षणातून विकास कार्यक्रमांतर्गत लोक प्रतिनिधींचे सक्षमीकरणाद्वारे पंचायती राज व्यवस्था बळकट करणे.</li>
-      
-    </ul>
-   
-  </ContentPage>
+ <ContentPage title="दृष्टी आणि ध्येय" publishedDate="१५ मार्च २०२४">
+
+  <h2 className="text-xl font-bold mb-4">दृष्टी आणि ध्येय</h2>
+
+  <ul className="list-disc pl-6 space-y-2 mb-8">
+    <li>
+      पंचायत समिती संगमनेर ग्रामीण क्षेत्रामध्ये मुलभुत सुविधा उपलब्ध होण्यासाठी तसेच स्वच्छ, सुंदर, व हरित ग्राम तयार करण्यासाठी विविध उपक्रम राबविणे.
+    </li>
+
+    <li>
+      विविध बचत गट तसेच महाराष्ट्र राज्य ग्रामीण जीवनोन्नती अभियानाद्वारे ग्रामस्थांचे जीवनमान उंचावण्यासाठी उपक्रम चालविणे.
+    </li>
+
+    <li>
+      विविध घरकुल योजनेअंतर्गत निवारा व निवारा विषयक सुविधा पुरविणे.
+    </li>
+
+    <li>
+      प्रशिक्षणातून विकास कार्यक्रमांतर्गत लोक प्रतिनिधींचे सक्षमीकरणाद्वारे पंचायती राज व्यवस्था बळकट करणे.
+    </li>
+  </ul>
+
+</ContentPage>
 );
 
 export const ObjectivesFunctions = () => (
-  <ContentPage title="उद्दिष्टे आणि कार्ये" publishedDate="१५ मार्च २०२४">
-    <h2 className="mb-3 font-bold text-2xl">
-      उद्दिष्टे
-    </h2>
-    <p className="text-gray-500 mb-3">पंचायत समिती संगमनेर ग्रामीण क्षेत्रामध्ये मुलभुत सुविधा उपलब्ध होण्यासाठी तसेच स्वच्छ, सुंदर, व हरित ग्राम तयार करण्यासाठी विविध उपक्रम राबवविणे, विविध बचत गट तसेच महाराष्ट्र राज्य ग्रामीण जीवनोन्नती अभियानाद्वारे ग्रामस्थांचे जीवनमान उंचावण्यासाठी उपक्रम चालविणे, विविध घरकुल योजनेअंतर्गत निवारा व निवारा विषयक सुविधा पुरविणे, प्रशिक्षणातून विकास या कार्यक्रमांतर्गत लोक प्रतिनिधींचे सक्षमीकरण याद्वारे पंचायती राज व्यवस्था बळकट करणे हे या संस्थेचे प्रमुख उद्दीष्ट आहे.</p>
-    <h2 className="mb-3 font-bold text-2xl">
-     मुख्य कार्ये:
-    </h2>
-    <ul className="list-decimal pl-6 space-y-3">
-      <li>तालुक्यातील ग्रामपंचायतींच्या कामावर देखरेख आणि नियंत्रण ठेवणे.</li>
-      <li>कृषी विकासासाठी नवनवीन तंत्रज्ञान आणि योजना राबवणे.</li>
-      <li>प्राथमिक शिक्षण आणि आरोग्य सेवांचा दर्जा सुधारणे.</li>
-      <li>स्वच्छ भारत अभियानांतर्गत स्वच्छता आणि सांडपाणी व्यवस्थापन करणे.</li>
-      <li>महिला व बालकल्याण विभागामार्फत विविध उपक्रम राबवणे.</li>
-    </ul>
-  </ContentPage>
+  <ContentPage title="दृष्टी आणि ध्येय" publishedDate="१५ मार्च २०२४">
+  {/* <h2 className="text-xl font-bold mb-4">दृष्टी आणि ध्येय</h2> */}
+
+  <ul className="list-disc pl-6 space-y-3 mb-8 leading-relaxed text-gray-800">
+    <li>
+      पंचायत समिती संगमनेर ग्रामीण क्षेत्रामध्ये मूलभूत सुविधा उपलब्ध करून देणे तसेच स्वच्छ, सुंदर व हरित ग्राम निर्माण करण्यासाठी विविध उपक्रम राबविणे.
+    </li>
+
+    <li>
+      विविध बचत गट तसेच "महाराष्ट्र राज्य ग्रामीण जीवनोन्नती अभियान" (MSRLM) अंतर्गत ग्रामस्थांचे जीवनमान उंचावण्यासाठी प्रभावी उपक्रम राबविणे.
+    </li>
+
+    <li>
+      विविध घरकुल योजनांच्या माध्यमातून नागरिकांना सुरक्षित निवारा व संबंधित सुविधा उपलब्ध करून देणे.
+    </li>
+
+    <li>
+      प्रशिक्षण व विकास कार्यक्रमांद्वारे लोकप्रतिनिधींचे सक्षमीकरण करून पंचायती राज व्यवस्था अधिक बळकट करणे.
+    </li>
+  </ul>
+
+</ContentPage>
 );
 
 export const AdminStructure = () => (
@@ -85,40 +109,75 @@ export const AdminStructure = () => (
 
 export const Organizations = () => (
   <ContentPage title="संस्था">
-    <div className="space-y-8">
-      <section>
-        <h2 className="text-xl font-bold mb-4">अ) संलग्न कार्यालये</h2>
-        <p className="p-4 bg-red-50 text-red-700 rounded border border-red-100">उपलब्ध नाही </p>
-      </section>
-      <section>
-        <h2 className="text-xl font-bold mb-4">ब) संचालनालय/आयुक्तालय</h2>
-        <p className="p-4 bg-red-50 text-red-700 rounded border border-red-100">उपलब्ध नाही </p>
-      </section>
-    </div>
-  </ContentPage>
+
+  <div className="space-y-8">
+
+    <section>
+      <h2 className="text-xl font-semibold mb-3 text-gray-800">
+        अ) संलग्न कार्यालये
+      </h2>
+
+      <p className="p-4 bg-red-50 text-red-600 rounded-md border border-red-200 text-sm">
+        उपलब्ध नाही
+      </p>
+    </section>
+
+    <section>
+      <h2 className="text-xl font-semibold mb-3 text-gray-800">
+        ब) संचालनालय / आयुक्तालय
+      </h2>
+
+      <p className="p-4 bg-red-50 text-red-600 rounded-md border border-red-200 text-sm">
+        उपलब्ध नाही
+      </p>
+    </section>
+
+  </div>
+
+</ContentPage>
 );
 
 export const WhosWho = () => (
   <ContentPage title="कोणाचे कोण">
-    <div className="overflow-x-auto">
-      <table className="w-full border-collapse border border-gray-200">
-        <thead className="bg-blue-900 text-white">
-          <tr>
-            <th className="border p-3 text-left">नाव</th>
-            <th className="border p-3 text-left">ईमेल</th>
-            <th className="border p-3 text-left">पत्ता</th>
-            <th className="border p-3 text-left">फोन</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr className="hover:bg-gray-50 whitespace-nowrap">
-            <td className="border p-3 font-medium">श्री. आनंद भंडारी</td>
-            <td className="border p-3 text-blue-600">ceozp[dot]ahmednagar[at]maharashtra[dot]gov[dot]in</td>
-            <td className="border p-3 text-sm">जिल्हा परिषद नवीन प्रशासकीय इमारत, दुसरा मजला, माळीवाडा एस.टी. स्टॅंड समोर, पंचायत समिती संगमनेर - 422605</td>
-            <td className="border p-3">02412355219</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </ContentPage>
+
+  <div className="overflow-x-auto">
+    <table className="w-full border border-gray-300 rounded-lg overflow-hidden">
+
+      <thead className="bg-blue-900 text-white">
+        <tr>
+          <th className="border p-3 text-left">नाव</th>
+          <th className="border p-3 text-left">ईमेल</th>
+          <th className="border p-3 text-left">पत्ता</th>
+          <th className="border p-3 text-left">फोन</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr className="hover:bg-gray-50 transition whitespace-nowrap">
+          
+          <td className="border p-3 font-medium">
+            श्री प्रविण अण्णासाहेब सिनारे
+          </td>
+
+          <td className="border p-3 text-blue-600 break-all">
+            	bdosangamner@rediffmail.com
+          </td>
+
+          <td className="border p-3 text-sm leading-relaxed">
+            पंचायत समिती कार्यालय,
+            संगमनेर, तालुका संगमनेर,
+जिल्हा अहिल्यानगर, महाराष्ट्र – 422605
+          </td>
+
+          <td className="border p-3">
+            02412355219
+          </td>
+
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+
+</ContentPage>
 );
