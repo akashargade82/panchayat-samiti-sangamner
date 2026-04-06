@@ -213,7 +213,7 @@ export const Footer = () => {
               <Link to="/notices" className="hover:text-orange-gov flex items-center gap-1">» सूचना</Link>
               <Link to="/directory" className="hover:text-orange-gov flex items-center gap-1">» निर्देशिका</Link>
               <a href="https://www.maharashtra.gov.in" target="_blank" className="hover:text-orange-gov flex items-center gap-1">» महाराष्ट्र शासन</a>
-              <a href="https://sangamnerps.netlify.app/" target="_blank" className="hover:text-orange-gov flex items-center gap-1">» जिल्हा परिषद पंचायत समिती संगमनेर</a>
+              <a href="https://sangamnerps.netlify.app/" target="_blank" className="hover:text-orange-gov flex items-center gap-1">» पंचायत समिती संगमनेर</a>
             </div>
           </div>
           <div>
