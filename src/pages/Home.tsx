@@ -19,24 +19,24 @@ interface HomeProps {
 
 // ─── Notices ─────────────────────────────────────────────────────────────────
 export const notices = [
-  { id: 1, date: "१५", month: "मार्च",      title: "ग्रामपंचायत निवडणूक २०२४ - मतदार यादी प्रसिद्धीबाबत.",            published: "१५ मार्च २०२४",      category: "घोषणा",  pdf: "/pdfs/notice1.pdf" },
-  { id: 2, date: "१०", month: "मार्च",      title: "आरोग्य विभाग – साहित्य खरेदी दरपत्रक सूचना",                      published: "१० मार्च २०२४",      category: "निविदा", pdf: "/pdfs/notice2.pdf" },
-  { id: 3, date: "०५", month: "मार्च",      title: "स्वच्छ भारत अभियान अंतर्गत गाव स्वच्छता उपक्रमाबाबत सूचना",       published: "०५ मार्च २०२४",      category: "सूचना",  pdf: "/pdfs/notice3.pdf" },
-  { id: 4, date: "२८", month: "फेब्रुवारी", title: "पाणीपुरवठा विभाग – दुरुस्ती व देखभाल कामाबाबत माहिती",            published: "२८ फेब्रुवारी २०२४", category: "सूचना",  pdf: "/pdfs/notice4.pdf" },
-  { id: 5, date: "२०", month: "फेब्रुवारी", title: "महात्मा गांधी रोजगार हमी योजना अंतर्गत कामे सुरू करण्याबाबत",    published: "२० फेब्रुवारी २०२४", category: "योजना",  pdf: "/pdfs/notice5.pdf" },
-  { id: 6, date: "१२", month: "फेब्रुवारी", title: "शाळा पोषण आहार योजनेबाबत आवश्यक सूचना",                          published: "१२ फेब्रुवारी २०२४", category: "घोषणा",  pdf: "/pdfs/notice6.pdf" },
+  { id: 1, date: "१५", month: "मार्च", title: "ग्रामपंचायत निवडणूक २०२४ - मतदार यादी प्रसिद्धीबाबत.", published: "१५ मार्च २०२४", category: "घोषणा", pdf: "/pdfs/notice1.pdf" },
+  { id: 2, date: "१०", month: "मार्च", title: "आरोग्य विभाग – साहित्य खरेदी दरपत्रक सूचना", published: "१० मार्च २०२४", category: "निविदा", pdf: "/pdfs/notice2.pdf" },
+  { id: 3, date: "०५", month: "मार्च", title: "स्वच्छ भारत अभियान अंतर्गत गाव स्वच्छता उपक्रमाबाबत सूचना", published: "०५ मार्च २०२४", category: "सूचना", pdf: "/pdfs/notice3.pdf" },
+  { id: 4, date: "२८", month: "फेब्रुवारी", title: "पाणीपुरवठा विभाग – दुरुस्ती व देखभाल कामाबाबत माहिती", published: "२८ फेब्रुवारी २०२४", category: "सूचना", pdf: "/pdfs/notice4.pdf" },
+  { id: 5, date: "२०", month: "फेब्रुवारी", title: "महात्मा गांधी रोजगार हमी योजना अंतर्गत कामे सुरू करण्याबाबत", published: "२० फेब्रुवारी २०२४", category: "योजना", pdf: "/pdfs/notice5.pdf" },
+  { id: 6, date: "१२", month: "फेब्रुवारी", title: "शाळा पोषण आहार योजनेबाबत आवश्यक सूचना", published: "१२ फेब्रुवारी २०२४", category: "घोषणा", pdf: "/pdfs/notice6.pdf" },
 ];
 
 // ─── Leaders ──────────────────────────────────────────────────────────────────
 const STATIC_LEADERS = [
-  { name: "मा.ना.श्री. देवेंद्र फडणवीस",          role: "मुख्यमंत्री, महाराष्ट्र राज्य",                              image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/20241226554268834.png" },
-  { name: "मा.ना.श्री. एकनाथ शिंदे",              role: "उपमुख्यमंत्री, महाराष्ट्र राज्य",                            image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/20241210519881483.jpeg" },
-  { name: "मा.ना.श्रीमती. सुनेत्रा अजित पवार",    role: "उपमुख्यमंत्री, महाराष्ट्र राज्य",                            image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2026/02/2026020373151347.jpg" },
-  { name: "मा.ना.श्री. जयकुमार गोरे",             role: "मंत्री, ग्रामविकास व पंचायतराज विभाग",                       image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/20241226862517803.png" },
-  { name: "मा.ना.श्री. योगेश कदम",               role: "राज्यमंत्री, ग्रामविकास व पंचायतराज विभाग",                  image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/202412271839437941.png" },
-  { name: "मा.ना.श्री. एकनाथ डवले",              role: "प्रधान सचिव, ग्रामविकास विभाग",                              image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/202412261951170016.png" },
-  { name: "मा.ना.श्री.आनंद भंडारी ( भा.प्र.से )", role: "मुख्य कार्यकारी अधिकारी , जिल्हा परिषद अहिल्यानगर",         image: "https://cdnbbsr.s3waas.gov.in/s385b75d04f478d3841e38eb64aefdb05a/uploads/2025/07/20250728469510874.jpg" },
-  { name: "मा.ना.श्री प्रविण अण्णासाहेब सिनारे",  role: "गट विकास अधिकारी, संगमनेर",                                  image: bdoImage },
+  { name: "मा.ना.श्री. देवेंद्र फडणवीस", role: "मुख्यमंत्री, महाराष्ट्र राज्य", image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/20241226554268834.png" },
+  { name: "मा.ना.श्री. एकनाथ शिंदे", role: "उपमुख्यमंत्री, महाराष्ट्र राज्य", image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/20241210519881483.jpeg" },
+  { name: "मा.ना.श्रीमती. सुनेत्रा अजित पवार", role: "उपमुख्यमंत्री, महाराष्ट्र राज्य", image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2026/02/2026020373151347.jpg" },
+  { name: "मा.ना.श्री. राधाकृष्ण विखे पाटील", role: "पालकमंत्री, अहिल्यानगर", image: "https://th.bing.com/th/id/OIP.PtWLJfggaxIYbKDoXBtlnwHaEK?w=264&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" },
+  { name: "मा.ना.श्री. जयकुमार गोरे", role: "मंत्री, ग्रामविकास व पंचायतराज विभाग", image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/20241226862517803.png" },
+  { name: "मा.ना.श्री. एकनाथ डवले", role: "प्रधान सचिव, ग्रामविकास विभाग", image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/202412261951170016.png" },
+  { name: "मा.ना.श्री.आनंद भंडारी ( भा.प्र.से )", role: "मुख्य कार्यकारी अधिकारी , जिल्हा परिषद अहिल्यानगर", image: "https://cdnbbsr.s3waas.gov.in/s385b75d04f478d3841e38eb64aefdb05a/uploads/2025/07/20250728469510874.jpg" },
+  { name: "मा.ना.श्री प्रविण अण्णासाहेब सिनारे", role: "गट विकास अधिकारी, संगमनेर", image: bdoImage },
 ];
 
 // ─── Banner Slides — component bahar, sirf data (hooks nahi) ─────────────────
@@ -60,10 +60,10 @@ const bannerSlides = [
 
 // ─── Emergency Numbers ────────────────────────────────────────────────────────
 const emergencyNumbers = [
-  { name: "पोलीस",           number: "100",  icon: <ShieldAlert className="text-blue-600"   size={22} /> },
-  { name: "रुग्णवाहिका",     number: "108",  icon: <HeartPulse  className="text-red-600"    size={22} /> },
-  { name: "अग्निशमन दल",    number: "101",  icon: <Flame       className="text-orange-600" size={22} /> },
-  { name: "महिला हेल्पलाइन", number: "1091", icon: <Siren       className="text-purple-600" size={22} /> },
+  { name: "पोलीस", number: "100", icon: <ShieldAlert className="text-blue-600" size={22} /> },
+  { name: "रुग्णवाहिका", number: "108", icon: <HeartPulse className="text-red-600" size={22} /> },
+  { name: "अग्निशमन दल", number: "101", icon: <Flame className="text-orange-600" size={22} /> },
+  { name: "महिला हेल्पलाइन", number: "1091", icon: <Siren className="text-purple-600" size={22} /> },
 ];
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -127,9 +127,8 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
             <button
               key={idx}
               onClick={() => setCurrentSlide(idx)}
-              className={`w-3 h-3 rounded-full transition-all ${
-                idx === currentSlide ? 'bg-orange-gov scale-125' : 'bg-white/60'
-              }`}
+              className={`w-3 h-3 rounded-full transition-all ${idx === currentSlide ? 'bg-orange-gov scale-125' : 'bg-white/60'
+                }`}
             />
           ))}
         </div>
@@ -238,11 +237,11 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
               </h3>
               <div className="space-y-3">
                 {[
-                  { name: 'महाराष्ट्र शासन',                    url: 'https://www.maharashtra.gov.in' },
+                  { name: 'महाराष्ट्र शासन', url: 'https://www.maharashtra.gov.in' },
                   { name: 'जिल्हा परिषद पंचायत समिती संगमनेर', url: 'https://sangamnerps.netlify.app/' },
-                  { name: 'आपले सरकार पोर्टल',                  url: 'https://aaplesarkar.mahaonline.gov.in' },
-                  { name: 'डिजिटल इंडिया',                      url: 'https://www.digitalindia.gov.in' },
-                  { name: 'महा-भूलेख',                          url: 'https://mahabhulekh.maharashtra.gov.in' },
+                  { name: 'आपले सरकार पोर्टल', url: 'https://aaplesarkar.mahaonline.gov.in' },
+                  { name: 'डिजिटल इंडिया', url: 'https://www.digitalindia.gov.in' },
+                  { name: 'महा-भूलेख', url: 'https://mahabhulekh.maharashtra.gov.in' },
                 ].map((link) => (
                   <a
                     key={link.name}
@@ -294,10 +293,10 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
           <h2 className="text-2xl font-bold text-center mb-12 text-blue-gov">महत्वाच्या सेवा</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { name: 'योजना',       icon: <FileText className="text-orange-gov" />, path: '/admin-depts/ps' },
-              { name: 'निर्देशिका', icon: <Users    className="text-blue-gov"   />, path: '/directory' },
-              { name: 'नागरी सेवा', icon: <Info     className="text-orange-gov" />, path: '/citizens/services' },
-              { name: 'कागदपत्रे',  icon: <FileText className="text-blue-gov"   />, path: '/documents' },
+              { name: 'योजना', icon: <FileText className="text-orange-gov" />, path: '/admin-depts/ps' },
+              { name: 'निर्देशिका', icon: <Users className="text-blue-gov" />, path: '/directory' },
+              { name: 'नागरी सेवा', icon: <Info className="text-orange-gov" />, path: '/citizens/services' },
+              { name: 'कागदपत्रे', icon: <FileText className="text-blue-gov" />, path: '/documents' },
             ].map((service) => (
               <Link
                 key={service.name}
