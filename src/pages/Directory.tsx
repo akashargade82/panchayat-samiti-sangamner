@@ -17,110 +17,110 @@ interface Department {
 
 // ─── Department Data ──────────────────────────────────────────────────────────
 const DEPARTMENTS: Department[] = [
-  {
-    title: "जिल्हा ग्रामीण विकास यंत्रणा",
-    officers: [
-      { name: "श्री. अ. ब. पाटील",      designation: "प्रकल्प संचालक",         email: "drda.ahilyanagar@maharashtra.gov.in", phone: "0241-2355210" },
-    ],
-  },
-  {
-    title: "सामान्य प्रशासन विभाग",
-    officers: [
-      { name: "श्री. अ. ब. देशमुख",     designation: "विभागीय अधिकारी",        email: "ga.sangamner@maharashtra.gov.in",     phone: "0241-2355211" },
-    ],
-  },
-  {
-    title: "अर्थ विभाग",
-    officers: [
-      { name: "श्री. र. स. कुलकर्णी",   designation: "लेखाधिकारी",             email: "finance.sangamner@maharashtra.gov.in", phone: "0241-2355212" },
-    ],
-  },
-  {
-    title: "ग्रामपंचायत विभाग",
-    officers: [
-      { name: "श्री. म. ग. शिंदे",       designation: "विभागीय अधिकारी",        email: "gp.sangamner@maharashtra.gov.in",     phone: "0241-2355213" },
-    ],
-  },
-  {
-    title: "महिला व बालकल्याण विभाग",
-    officers: [
-      { name: "श्री. निलेश गोवर्धनराव राऊत", designation: "बाल विकास प्रकल्प अधिकारी, एकात्मिक बाल विकास सेवा योजना प्रकल्प संगमनेर / घारगाव-१ / घारगाव-२", email: "cdposangamner@gmail.com", phone: "0241-2355214" },
-    ],
-  },
-  {
-    title: "म.गांधी ग्रामीण रो.ह.यो. (मनरेगा)",
-    officers: [
-      { name: "श्री. अ. ब. जाधव",       designation: "कार्यक्रम अधिकारी",      email: "mnrega.sangamner@maharashtra.gov.in", phone: "0241-2355215" },
-    ],
-  },
-  {
-    title: "पशुसंवर्धन विभाग",
-    officers: [
-      { name: "डॉ. पुंडलिक दादाभाऊ येळे", designation: "पशुधन विकास अधिकारी (विस्तार), पशुसंवर्धन विभाग", email: "ldio.ex.sangamner@gmail.com", phone: "0241-2355216" },
-    ],
-  },
-  {
-    title: "कृषि विभाग",
-    officers: [
-      { name: "श्री. ग. ह. पवार",        designation: "तालुका कृषि अधिकारी",   email: "agri.sangamner@maharashtra.gov.in",   phone: "0241-2355217" },
-    ],
-  },
-  {
-    title: "समाज कल्याण विभाग",
-    officers: [
-      { name: "श्री. बा. रा. मोरे",      designation: "समाज कल्याण अधिकारी",   email: "sw.sangamner@maharashtra.gov.in",     phone: "0241-2355218" },
-    ],
-  },
+  // {
+  //   title: "जिल्हा ग्रामीण विकास यंत्रणा",
+  //   officers: [
+  //     { name: "श्री. अ. ब. पाटील",      designation: "प्रकल्प संचालक",         email: "drda.ahilyanagar@maharashtra.gov.in", phone: "0241-2355210" },
+  //   ],
+  // },
+  // {
+  //   title: "सामान्य प्रशासन विभाग",
+  //   officers: [
+  //     { name: "श्री. अ. ब. देशमुख",     designation: "विभागीय अधिकारी",        email: "ga.sangamner@maharashtra.gov.in",     phone: "0241-2355211" },
+  //   ],
+  // },
+  // {
+  //   title: "अर्थ विभाग",
+  //   officers: [
+  //     { name: "श्री. र. स. कुलकर्णी",   designation: "लेखाधिकारी",             email: "finance.sangamner@maharashtra.gov.in", phone: "0241-2355212" },
+  //   ],
+  // },
+  // {
+  //   title: "ग्रामपंचायत विभाग",
+  //   officers: [
+  //     { name: "श्री. म. ग. शिंदे",       designation: "विभागीय अधिकारी",        email: "gp.sangamner@maharashtra.gov.in",     phone: "0241-2355213" },
+  //   ],
+  // },
+  // {
+  //   title: "महिला व बालकल्याण विभाग",
+  //   officers: [
+  //     { name: "श्री. निलेश गोवर्धनराव राऊत", designation: "बाल विकास प्रकल्प अधिकारी, एकात्मिक बाल विकास सेवा योजना प्रकल्प संगमनेर / घारगाव-१ / घारगाव-२", email: "cdposangamner@gmail.com", phone: "0241-2355214" },
+  //   ],
+  // },
+  // {
+  //   title: "म.गांधी ग्रामीण रो.ह.यो. (मनरेगा)",
+  //   officers: [
+  //     { name: "श्री. अ. ब. जाधव",       designation: "कार्यक्रम अधिकारी",      email: "mnrega.sangamner@maharashtra.gov.in", phone: "0241-2355215" },
+  //   ],
+  // },
+  // {
+  //   title: "पशुसंवर्धन विभाग",
+  //   officers: [
+  //     { name: "डॉ. पुंडलिक दादाभाऊ येळे", designation: "पशुधन विकास अधिकारी (विस्तार), पशुसंवर्धन विभाग", email: "ldio.ex.sangamner@gmail.com", phone: "0241-2355216" },
+  //   ],
+  // },
+  // {
+  //   title: "कृषि विभाग",
+  //   officers: [
+  //     { name: "श्री. ग. ह. पवार",        designation: "तालुका कृषि अधिकारी",   email: "agri.sangamner@maharashtra.gov.in",   phone: "0241-2355217" },
+  //   ],
+  // },
+  // {
+  //   title: "समाज कल्याण विभाग",
+  //   officers: [
+  //     { name: "श्री. बा. रा. मोरे",      designation: "समाज कल्याण अधिकारी",   email: "sw.sangamner@maharashtra.gov.in",     phone: "0241-2355218" },
+  //   ],
+  // },
   {
     title: "पंचायत समिती संगमनेर",
     officers: [
       {
-        name: "श्री. प्रविण आळासाहेब किनारे",
-        designation: "जिल्हा विकास अधिकारी (उ.भे.), पंचायत समिती संगमनेर",
+        name: "श्री. प्रविण अण्णासाहेब सिनारे",
+        designation: "गट विकास अधिकारी (उ.श्रे.), पंचायत समिती संगमनेर",
         email: "bdosangamner@rediffmail.com",
-        phone: "0241-2355219",
+        phone: "02425-272798",
       },
       {
         name: "श्री. राजेंद्र रविंद्रनाथ ठाकूर",
-        designation: "सहायकगट विकास अधिकारी, पंचायत समिती संगमनेर",
+        designation: "सहायक गट विकास अधिकारी, पंचायत समिती संगमनेर",
         email: "bdosangamner@rediffmail.com",
-        phone: "0241-2355219",
+        phone: "02425-272798",
       },
       {
-        name: "श्री. हेमंत मुरलीधर वखाडा",
+        name: "श्री. हेमंत मुरलीधर चव्हाण",
         designation: "उप अभियंता, जि.प. सार्वजनिक बांधकाम उप विभाग",
         email: "sangamzppwsd2014@gmail.com",
-        phone: "0241-2355220",
+        phone: "02425-272798",
       },
       {
-        name: "श्री. तेजस दामुनगोडे",
+        name: "श्री. तेजस दामु बगोडे",
         designation: "उप अभियंता, जि.प. ग्रामीण पाणी पुरवठा विभाग",
         email: "rwssangamner@gmail.com",
-        phone: "0241-2355221",
+        phone: "02425-272798",
       },
       {
-        name: "श्री. पंडेरे विनायक आऊसाहेब",
+        name: "श्री. पंडोरे विनायक भाऊसाहेब",
         designation: "उप विभागीय जलसंधारण अधिकारी, जि.प. लघु पाटबंधारे विभाग",
         email: "roi.sangamner@gmail.com",
-        phone: "0241-2355222",
+        phone: "02425-272798",
       },
       {
-        name: "श्री. निलेश गोवर्धनराव राऊत",
+        name: "श्री. निलेश गोरक्षनाथ राऊत",
         designation: "बाल विकास प्रकल्प अधिकारी, एकात्मिक बाल विकास सेवा योजना - संगमनेर / घारगाव-१ / घारगाव-२",
         email: "cdposangamner@gmail.com",
-        phone: "0241-2355223",
+        phone: "02425-272798",
       },
       {
-        name: "डॉ. कांचेश कृष्णाजी टावरे",
+        name: "डॉ. कामेश कृष्णाजी टावरे",
         designation: "तालुका आरोग्य अधिकारी, आरोग्य विभाग",
         email: "thiosangamner@gmail.com",
-        phone: "0241-2355224",
+        phone: "02425-272798",
       },
       {
-        name: "डॉ. पुंडलिक दादाभाऊ येळे",
+        name: "डॉ. पुंडलिक दादाभाऊ येवले",
         designation: "पशुधन विकास अधिकारी (विस्तार), पशुसंवर्धन विभाग",
         email: "ldio.ex.sangamner@gmail.com",
-        phone: "0241-2355225",
+        phone: "02425-272798",
       },
     ],
   },

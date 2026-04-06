@@ -116,7 +116,7 @@ const ServicesSection = () => (
 
 const GRIEVANCE_LINKS = [
   { label: "प्रशासकीय सुधारणा आणि सार्वजनिक तक्रारी विभाग (सीपीजीआरएमएस)", url: "https://pgportal.gov.in/" },
-  { label: "तक्रार निवारण प्रणाली (महाराष्ट्र राज्य)", url: "https://grievance.maharashtra.gov.in/" },
+  { label: "तक्रार निवारण प्रणाली (महाराष्ट्र राज्य)", url: "https://grievances.maharashtra.gov.in/mr" },
   { label: "आपले सरकार", url: "https://aaplesarkar.mahaonline.gov.in" },
 ];
 

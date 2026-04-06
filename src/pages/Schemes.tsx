@@ -498,7 +498,7 @@ const PS_DEPARTMENTS: DeptInfo[] = [
       "गट विकास अधिकारी, पंचायत समिती संगमनेर",
       "सहायक गट विकास अधिकारी, पंचायत समिती संगमनेर",
     ],
-    phone: "0241-2355219",
+    phone: "02425-272798",
   },
 ];
 
@@ -556,16 +556,16 @@ const DeptAccordion: React.FC<{ dept: DeptInfo; defaultOpen?: boolean }> = ({
 export const AdminDepts = ({ type }: { type: 'zp' | 'ps' }) => {
   const isZP = type === 'zp';
   const departments = isZP ? ZP_DEPARTMENTS : PS_DEPARTMENTS;
-  const title = isZP ? "मुख्यालय – जिल्हा परिषद" : "पंचायत समिती";
+  const title = isZP ? "" : "पंचायत समिती";
   return (
     <ContentPage title="प्रशासकीय विभाग">
       <div className="flex gap-3 mb-8">
-        <a
+        {/* <a
           href="?type=zp"
           className={`px-5 py-2 rounded-full text-sm font-bold border transition-all ${isZP ? 'bg-blue-900 text-white border-blue-900' : 'bg-white text-gray-600 border-gray-300 hover:border-blue-900 hover:text-blue-900'}`}
         >
           मुख्यालय – जिल्हा परिषद
-        </a>
+        </a> */}
         <a
           href="?type=ps"
           className={`px-5 py-2 rounded-full text-sm font-bold border transition-all ${!isZP ? 'bg-blue-900 text-white border-blue-900' : 'bg-white text-gray-600 border-gray-300 hover:border-blue-900 hover:text-blue-900'}`}
@@ -694,7 +694,7 @@ const ServicesSection = () => (
 // --- Grievance Sub-section ---
 const GRIEVANCE_LINKS = [
   { label: "प्रशासकीय सुधारणा आणि सार्वजनिक तक्रारी विभाग (सीपीजीआरएमएस)", url: "https://pgportal.gov.in/" },
-  { label: "तक्रार निवारण प्रणाली (महाराष्ट्र राज्य)", url: "https://grievance.maharashtra.gov.in/" },
+  { label: "तक्रार निवारण प्रणाली (महाराष्ट्र राज्य)", url: "https://grievances.maharashtra.gov.in/mr" },
   { label: "आपले सरकार", url: "https://aaplesarkar.mahaonline.gov.in" },
 ];
 
@@ -817,21 +817,21 @@ interface DocCategory {
 }
 
 const DOC_CATEGORIES: DocCategory[] = [
-  {
-    label: "अंदाजपत्रक",
-    items: [
-      {
-        title: "जिल्हा परिषद पंचायत समिती संगमनेर अंदाजपत्रक 2025-26",
-        pdfFile: "Budget_2025_26.pdf",
-        size: "743 KB",
-      },
-      {
-        title: "जिल्हा परिषद स्व:उत्पन्नाचे सन 2025-26 चे मूळ व अंतिम अंदाजपत्रक, तसेच सन 2026-27 चे मूळ अंदाजपत्रक",
-        pdfFile: "Budget_2026_27.pdf",
-        size: "897 KB",
-      },
-    ],
-  },
+  // {
+  //   label: "अंदाजपत्रक",
+  //   items: [
+  //     {
+  //       title: "जिल्हा परिषद पंचायत समिती संगमनेर अंदाजपत्रक 2025-26",
+  //       pdfFile: "Budget_2025_26.pdf",
+  //       size: "743 KB",
+  //     },
+  //     {
+  //       title: "जिल्हा परिषद स्व:उत्पन्नाचे सन 2025-26 चे मूळ व अंतिम अंदाजपत्रक, तसेच सन 2026-27 चे मूळ अंदाजपत्रक",
+  //       pdfFile: "Budget_2026_27.pdf",
+  //       size: "897 KB",
+  //     },
+  //   ],
+  // },
   {
     label: "परिपत्रके / सूचना",
     items: [

@@ -188,7 +188,7 @@ const FormerPresidents = () => (
       माजी अध्यक्ष
     </h3>
     <p className="text-sm text-gray-500 mb-4 pl-3">
-      सन 1962 पासून अहमदनगर जिल्हा परिषदेचे अध्यक्ष –
+      सन 1962 पासून अहिल्यानगरजिल्हा परिषदेचे अध्यक्ष –
     </p>
     <div className="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
       <table className="w-full border-collapse">
@@ -224,7 +224,7 @@ const FormerCEOs = () => (
       माजी मुख्य कार्यकारी अधिकारी
     </h3>
     <p className="text-sm text-gray-500 mb-4 pl-3">
-      सन 1962 पासूनचे अहमदनगर जिल्हा परिषदेचे मुख्य कार्यकारी अधिकारी –
+      सन 1962 पासूनचे अहिल्यानगरजिल्हा परिषदेचे मुख्य कार्यकारी अधिकारी –
     </p>
     <div className="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
       <table className="w-full border-collapse">

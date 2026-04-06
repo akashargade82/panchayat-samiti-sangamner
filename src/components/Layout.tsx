@@ -28,9 +28,9 @@ const navItems = [
   { name: 'निर्देशिका', path: '/directory' },
   {
     name: 'प्रशासकीय विभाग',
-    path: '/admin-depts/zp',
+    path: '/admin-depts/ps',
     children: [
-      { name: 'जिल्हा परिषद', path: '/admin-depts/zp' },
+      // { name: 'जिल्हा परिषद', path: '/admin-depts/zp' },
       { name: 'पंचायत समिती', path: '/admin-depts/ps' },
     ],
   },
@@ -41,20 +41,20 @@ const navItems = [
       { name: 'तक्रार निवारण', path: '/citizens/grievance' },
       { name: 'सेवा', path: '/citizens/services' },
       { name: 'सार्वजनिक सेवेचा अधिकार', path: '/citizens/rts' },
-      { name: 'अर्ज', path: '/citizens/forms' },
+      // { name: 'अर्ज', path: '/citizens/forms' },
       { name: 'स्वयम पोर्टल', path: '/citizens/swayam' },
     ],
   },
   { name: 'कागदपत्रे', path: '/documents' },
   { name: 'सूचना', path: '/notices' },
-  {
-    name: 'मीडिया कॉर्नर',
-    path: '/media/gallery',
+  // {
+  //   name: 'मीडिया कॉर्नर',
+  //   path: '/media/gallery',
     // children: [
     //   { name: 'छायाचित्र दालन', path: '/media/gallery' },
     //   { name: 'यशोगाथा', path: '/media/stories' },
     // ],
-  },
+  // },
 ];
 
 export const Header = () => {
@@ -68,7 +68,7 @@ export const Header = () => {
       <div className="bg-blue-gov text-white py-1 hidden md:block border-b border-white/10">
         <div className="container mx-auto px-4 flex justify-between items-center text-[12px]">
           <div className="flex gap-4">
-            <span className="flex items-center gap-1"><Phone size={12} /> 0241-2355219</span>
+            <span className="flex items-center gap-1"><Phone size={12} /> 02425-272798</span>
             <span className="flex items-center gap-1"><Mail size={12} /> 	bdosangamner@rediffmail.com</span>
           </div>
           <div className="flex gap-4 items-center">
@@ -221,7 +221,7 @@ export const Footer = () => {
             <div className="space-y-2 text-sm text-blue-100">
               <p>पंचायत समिती संगमनेर,</p>
               <p>अहिल्यानगर, महाराष्ट्र - 422605</p>
-              <p>फोन: 0241-2355219</p>
+              <p>फोन: 02425-272798</p>
             </div>
           </div>
           <div>
