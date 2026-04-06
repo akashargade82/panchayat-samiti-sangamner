@@ -18,7 +18,63 @@ interface HomeProps {
   /** Pass gpInfo from GpInformation's API response (res.data.data.gpInformation[0]) */
   gpInfo?: GpInfoType;
 }
-
+// notices.js
+export const notices = [
+  {
+    id: 1,
+    date: "१५",
+    month: "मार्च",
+    title: "ग्रामपंचायत निवडणूक २०२४ - मतदार यादी प्रसिद्धीबाबत.",
+    published: "१५ मार्च २०२४",
+    category: "घोषणा",
+    pdf: "/pdfs/notice1.pdf",
+  },
+  {
+    id: 2,
+    date: "१०",
+    month: "मार्च",
+    title: "आरोग्य विभाग – साहित्य खरेदी दरपत्रक सूचना",
+    published: "१० मार्च २०२४",
+    category: "निविदा",
+    pdf: "/pdfs/notice2.pdf",
+  },
+  {
+    id: 3,
+    date: "०५",
+    month: "मार्च",
+    title: "स्वच्छ भारत अभियान अंतर्गत गाव स्वच्छता उपक्रमाबाबत सूचना",
+    published: "०५ मार्च २०२४",
+    category: "सूचना",
+    pdf: "/pdfs/notice3.pdf",
+  },
+  {
+    id: 4,
+    date: "२८",
+    month: "फेब्रुवारी",
+    title: "पाणीपुरवठा विभाग – दुरुस्ती व देखभाल कामाबाबत माहिती",
+    published: "२८ फेब्रुवारी २०२४",
+    category: "सूचना",
+    pdf: "/pdfs/notice4.pdf",
+  },
+  {
+    id: 5,
+    date: "२०",
+    month: "फेब्रुवारी",
+    title: "महात्मा गांधी रोजगार हमी योजना अंतर्गत कामे सुरू करण्याबाबत",
+    published: "२० फेब्रुवारी २०२४",
+    category: "योजना",
+    pdf: "/pdfs/notice5.pdf",
+  },
+  {
+    id: 6,
+    date: "१२",
+    month: "फेब्रुवारी",
+    title: "शाळा पोषण आहार योजनेबाबत आवश्यक सूचना",
+    published: "१२ फेब्रुवारी २०२४",
+    category: "घोषणा",
+    pdf: "/pdfs/notice6.pdf",
+  },
+];
 // ─── Static leader data (same as GpInformation.tsx leaders array) ────────────
 const STATIC_LEADERS = [
   {
@@ -165,42 +221,45 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
           <div className="lg:col-span-8 space-y-8">
 
             {/* Notices */}
-            <div className="bg-white rounded shadow-sm border border-gray-200 overflow-hidden">
-              <div className="bg-blue-gov text-white px-6 py-3 flex justify-between items-center">
-                <h3 className="font-bold flex items-center gap-2 text-sm">
-                  <Bell size={18} /> ताज्या सूचना
-                </h3>
-                <Link
-                  to="/notices"
-                  className="text-[11px] bg-orange-gov px-2 py-1 rounded hover:bg-white hover:text-orange-gov transition-colors"
-                >
-                  सर्व पहा
-                </Link>
-              </div>
-              <div className="p-2">
-                <div className="h-[300px] overflow-y-auto custom-scrollbar">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <div
-                      key={i}
-                      className="flex gap-4 items-start p-4 border-b border-gray-50 last:border-0 hover:bg-gray-50 transition-colors cursor-pointer group"
-                    >
-                      <div className="bg-orange-gov/10 text-orange-gov px-3 py-1 rounded text-center min-w-[65px] border border-orange-gov/20">
-                        <span className="block text-lg font-bold leading-none">15</span>
-                        <span className="text-[10px] font-bold uppercase">मार्च</span>
-                      </div>
-                      <div>
-                        <h4 className="text-[14px] font-bold text-gray-800 group-hover:text-blue-gov">
-                          ग्रामपंचायत निवडणूक २०२४ - मतदार यादी प्रसिद्धीबाबत.
-                        </h4>
-                        <p className="text-[11px] text-gray-500 mt-1 font-bold">
-                          प्रकाशित दिनांक: १५ मार्च २०२४ | श्रेणी: घोषणा
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+         <div className="bg-white rounded shadow-sm border border-gray-200 overflow-hidden">
+  <div className="bg-blue-gov text-white px-6 py-3 flex justify-between items-center">
+    <h3 className="font-bold flex items-center gap-2 text-sm">
+      <Bell size={18} />  सूचना
+    </h3>
+  </div>
+
+  <div className="p-2">
+    <div className="h-[300px] overflow-y-auto custom-scrollbar">
+
+      {notices.map((item) => (
+        <div
+          key={item.id}
+          className="flex gap-4 items-start p-4 border-b border-gray-50 last:border-0 hover:bg-gray-50 transition-colors cursor-pointer group"
+        >
+          <div className="bg-orange-gov/10 text-orange-gov px-3 py-1 rounded text-center min-w-[65px] border border-orange-gov/20">
+            <span className="block text-lg font-bold leading-none">
+              {item.date}
+            </span>
+            <span className="text-[10px] font-bold uppercase">
+              {item.month}
+            </span>
+          </div>
+
+          <div>
+            <h4 className="text-[14px] font-bold text-gray-800 group-hover:text-blue-gov">
+              {item.title}
+            </h4>
+
+            <p className="text-[11px] text-gray-500 mt-1 font-bold">
+              प्रकाशित दिनांक: {item.published} | श्रेणी: {item.category}
+            </p>
+          </div>
+        </div>
+      ))}
+
+    </div>
+  </div>
+</div>
 
             {/* Emergency Numbers */}
             <div className="bg-white rounded shadow-sm border border-gray-200 p-6">
@@ -244,7 +303,7 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between p-3 bg-gray-50 rounded border border-gray-100 hover:bg-orange-gov hover:text-white transition-all group"
+                    className="flex items-center justify-between p-3 bg-gray-50 rounded border border-gray-100 hover:bg-orange-gov hover:text-orange-500 transition-all group"
                   >
                     <span className="text-sm font-medium">{link.name}</span>
                     <ExternalLink size={14} className="text-gray-400 group-hover:text-white" />
