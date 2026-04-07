@@ -122,6 +122,20 @@ const DEPARTMENTS: Department[] = [
         email: "ldio.ex.sangamner@gmail.com",
         phone: "02425-272798",
       },
+      ,
+      {
+        name: "श्री. वाळीबा नाथु उघडे ",
+        designation: "कृषि अधिकारी (सामान्य)",
+        email: "ssasangamner@gmail.com",
+        phone: "02425-272798",
+      },
+      ,
+      {
+        name: "बाळासाहेब हरीभाऊ गुंड",
+        designation: "गटशिक्षणाधिकारी पंचायत समिती संगमनेर",
+        email: "ssasangamner@gmail.com",
+        phone: "9420797533",
+      },
     ],
   },
 ];
