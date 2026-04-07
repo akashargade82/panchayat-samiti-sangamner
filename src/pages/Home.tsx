@@ -26,13 +26,13 @@ export const notices = [
 ];
 
 const STATIC_LEADERS = [
-  { name: "मा.ना.श्री. देवेंद्र फडणवीस", role: "मुख्यमंत्री, महाराष्ट्र राज्य", image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/20241226554268834.png" },
-  { name: "मा.ना.श्री. एकनाथ शिंदे", role: "उपमुख्यमंत्री, महाराष्ट्र राज्य", image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/20241210519881483.jpeg" },
+  { name: "मा.श्री. देवेंद्र फडणवीस", role: "मुख्यमंत्री, महाराष्ट्र राज्य", image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/20241226554268834.png" },
+  { name: "मा.श्री. एकनाथ शिंदे", role: "उपमुख्यमंत्री, महाराष्ट्र राज्य", image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/20241210519881483.jpeg" },
   { name: "मा.ना.श्रीमती. सुनेत्रा अजित पवार", role: "उपमुख्यमंत्री, महाराष्ट्र राज्य", image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2026/02/2026020373151347.jpg" },
-  { name: "मा.ना.श्री. राधाकृष्ण विखे पाटील", role: "पालकमंत्री, अहिल्यानगर", image: "https://th.bing.com/th/id/OIP.PtWLJfggaxIYbKDoXBtlnwHaEK?w=264&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" },
-  { name: "मा.ना.श्री. जयकुमार गोरे", role: "मंत्री, ग्रामविकास व पंचायतराज विभाग", image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/20241226862517803.png" },
-  { name: "मा.ना.श्री. एकनाथ डवले", role: "प्रधान सचिव, ग्रामविकास विभाग", image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/202412261951170016.png" },
-  { name: "मा.ना.श्री.आनंद भंडारी ( भा.प्र.से )", role: "मुख्य कार्यकारी अधिकारी , जिल्हा परिषद अहिल्यानगर", image: "https://cdnbbsr.s3waas.gov.in/s385b75d04f478d3841e38eb64aefdb05a/uploads/2025/07/20250728469510874.jpg" },
+  { name: "मा.श्री. राधाकृष्ण विखे पाटील", role: "पालकमंत्री, अहिल्यानगर", image: "https://th.bing.com/th/id/OIP.PtWLJfggaxIYbKDoXBtlnwHaEK?w=264&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" },
+  { name: "मा.श्री. जयकुमार गोरे", role: "मंत्री, ग्रामविकास व पंचायतराज विभाग", image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/20241226862517803.png" },
+  { name: "मा.श्री. एकनाथ डवले", role: "प्रधान सचिव, ग्रामविकास विभाग", image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/202412261951170016.png" },
+  { name: "मा.श्री.आनंद भंडारी ( भा.प्र.से )", role: "मुख्य कार्यकारी अधिकारी , जिल्हा परिषद अहिल्यानगर", image: "https://cdnbbsr.s3waas.gov.in/s385b75d04f478d3841e38eb64aefdb05a/uploads/2025/07/20250728469510874.jpg" },
   { name: "मा.ना.श्री प्रविण अण्णासाहेब सिनारे", role: "गट विकास अधिकारी (उ.श्रे.), पंचायत समिती संगमनेर", image: bdoImage },
 ];
 
