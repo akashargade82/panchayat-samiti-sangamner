@@ -129,13 +129,48 @@ const DEPARTMENTS: Department[] = [
         email: "bdosangamner@rediffmail.com",
         phone: "02425-272798",
       },
-      ,
       {
         name: "श्री. बाळासाहेब हरीभाऊ गुंड",
         designation: "गटशिक्षणाधिकारी",
         email: "ssasangamner@gmail.com",
         phone: "02425-272798",
       },
+      {
+        name: "श्रीमती. भाग्यश्री नरहरी शेळके",
+        designation: "विस्तार अधिकारी संखेकी(घरकुल)",
+        email: "ssasangamner@gmail.com",
+        phone: "02425-272798",
+      },
+      {
+        name: "श्री. भारत कासार",
+        designation: "विस्तार अधिकारी पंचायत(स्वच्छ भारत मिशन)",
+        email: "ssasangamner@gmail.com",
+        phone: "02425-272798",
+      },
+      {
+        name: "श्री. निलेश पोपटराव कोकाटे ",
+        designation: "तालुका अभियान व्यवस्थापक(उमेद)",
+        email: "ssasangamner@gmail.com",
+        phone: "02425-272798",
+      },
+      {
+        name: "श्री. मदन उत्तमराव शेवाळे",
+        designation: "विस्तार अधिकारी कक्ष प्रमुख(नरेगा)",
+        email: "ssasangamner@gmail.com",
+        phone: "02425-272798",
+      },
+      {
+        name: "श्री. संजय रंगनाथ अरगडे",
+        designation: "वरिष्ठ सहाय्यक(टंचाई)",
+        email: "ssasangamner@gmail.com",
+        phone: "02425-272798",
+      },
+      {
+        name: "श्री. प्रदीप ढोके",
+        designation: "तालुका व्यवस्थापक(आपले सरकार)",
+        email: "ssasangamner@gmail.com",
+        phone: "02425-272798",
+      }
     ],
   },
 ];
@@ -183,11 +218,11 @@ const DeptTable: React.FC<{ dept: Department; defaultOpen?: boolean }> = ({
               {dept.officers.map((o, i) => (
                 <tr
                   key={i}
-                  className={`border-b border-gray-100 last:border-0 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50 whitespace-nowrap'
+                  className={`border-b border-gray-100 last:border-0 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'
                     } hover:bg-blue-50 transition-colors`}
                 >
                   <td className="p-3 text-gray-400 font-medium">{i + 1}</td>
-                  <td className="p-3 font-semibold text-gray-800 whitespace-nowrap">{o.name}</td>
+                  <td className="p-3 font-semibold text-gray-800">{o.name}</td>
                   <td className="p-3 text-gray-700 leading-snug">{o.designation}</td>
                   <td className="p-3">
                     <a

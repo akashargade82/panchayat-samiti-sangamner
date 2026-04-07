@@ -30,7 +30,7 @@ const STATE_SCHEMES: Scheme[] = [
     pdfFile: "LadkiBahin.pdf",
     pdfLabel: "LadkiBahin.pdf",
   },
-  
+
   // {
   //   id: 2,
   //   name: "महाराष्ट्र शेतकरी कर्जमाफी योजना",
@@ -101,17 +101,17 @@ const CENTRAL_SCHEMES: Scheme[] = [
     pdfFile: "PMKisan.pdf",
     pdfLabel: "PMKisan.pdf",
   },
-  {
-    id: 4,
-    name: "मनरेगा (रोजगार हमी योजना)",
-    date: "२०२३-१०-०५",
-    area: "संपूर्ण भारत (ग्रामीण)",
-    benefit: "वर्षाला किमान १०० दिवस रोजगार हमी. रोजंदारी सरकार-निर्धारित दराने.",
-    howToApply: "ग्रामपंचायतीत जॉब कार्डसाठी अर्ज करावा.",
-    website: "https://nrega.nic.in",
-    pdfFile: "MNREGA.pdf",
-    pdfLabel: "MNREGA.pdf",
-  },
+  // {
+  //   id: 4,
+  //   name: "मनरेगा (रोजगार हमी योजना)",
+  //   date: "२०२३-१०-०५",
+  //   area: "संपूर्ण भारत (ग्रामीण)",
+  //   benefit: "वर्षाला किमान १०० दिवस रोजगार हमी. रोजंदारी सरकार-निर्धारित दराने.",
+  //   howToApply: "ग्रामपंचायतीत जॉब कार्डसाठी अर्ज करावा.",
+  //   website: "https://nrega.nic.in",
+  //   pdfFile: "MNREGA.pdf",
+  //   pdfLabel: "MNREGA.pdf",
+  // },
 ];
 
 // ─── Detail Modal ─────────────────────────────────────────────────────────────
@@ -202,7 +202,7 @@ const SchemeDetailModal = ({
 export const Schemes = ({ type }: { type: 'state' | 'central' }) => {
   const [selectedScheme, setSelectedScheme] = useState<Scheme | null>(null);
   const schemes = type === 'state' ? STATE_SCHEMES : CENTRAL_SCHEMES;
-  const title   = type === 'state' ? "राज्य सरकार योजना" : "केंद्र सरकार योजना";
+  const title = type === 'state' ? "राज्य सरकार योजना" : "केंद्र सरकार योजना";
   const accentColor = type === 'state' ? "bg-orange-500" : "bg-blue-900";
 
   return (
@@ -498,9 +498,9 @@ const PS_DEPARTMENTS: DeptInfo[] = [
       "तालुक्यातील विकास कामांचे नियोजन व अंमलबजावणी.",
     ],
     contact: [
-    "गट विकास अधिकारी (उ.श्रे.), पंचायत समिती संगमनेर",
+      "गट विकास अधिकारी (उ.श्रे.), पंचायत समिती संगमनेर",
       "सहायक गट विकास अधिकारी, पंचायत समिती संगमनेर",
-       "सहाय्यक प्रशासन अधिकारी ,पंचायत समिती संगमनेर",
+      "सहाय्यक प्रशासन अधिकारी ,पंचायत समिती संगमनेर",
     ],
     phone: "02425-272798",
   },
@@ -561,7 +561,7 @@ export const AdminDepts = ({ type }: { type: 'zp' | 'ps' }) => {
   const isZP = type === 'zp';
   const departments = isZP ? ZP_DEPARTMENTS : PS_DEPARTMENTS;
   const title = isZP ? "" : "पंचायत समिती";
-    // const title = isZP ? "मुख्यालय – जिल्हा परिषद" : "पंचायत समिती";
+  // const title = isZP ? "मुख्यालय – जिल्हा परिषद" : "पंचायत समिती";
   return (
     <ContentPage title="प्रशासकीय विभाग">
       <div className="flex gap-3 mb-8">
@@ -626,11 +626,10 @@ const RtsSection = () => {
           <button
             key={idx}
             onClick={() => setActiveTab(idx)}
-            className={`px-4 py-2 rounded-full text-sm font-bold border transition-all ${
-              activeTab === idx
+            className={`px-4 py-2 rounded-full text-sm font-bold border transition-all ${activeTab === idx
                 ? 'bg-blue-900 text-white border-blue-900'
                 : 'bg-white text-gray-600 border-gray-300 hover:border-blue-900 hover:text-blue-900'
-            }`}
+              }`}
           >
             {cat.label}
           </button>
@@ -667,7 +666,7 @@ const RtsSection = () => {
             </div>
           </div>
         ))} */}
-         <div className="text-center py-12 text-gray-400 text-sm font-medium border border-gray-200 rounded-xl bg-gray-50">
+        <div className="text-center py-12 text-gray-400 text-sm font-medium border border-gray-200 rounded-xl bg-gray-50">
           कोणतीही सूचना उपलब्ध नाही.
         </div>
       </div>
@@ -776,10 +775,10 @@ const FormsSection = () => (
 );
 
 export const Citizens = ({ section }: { section: string }) => {
-  if (section === 'rts')       return <RtsSection />;
-  if (section === 'services')  return <ServicesSection />;
+  if (section === 'rts') return <RtsSection />;
+  if (section === 'services') return <ServicesSection />;
   if (section === 'grievance') return <GrievanceSection />;
-  if (section === 'forms')     return <FormsSection />;
+  if (section === 'forms') return <FormsSection />;
   return (
     <ContentPage title="माहिती">
       <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-6">
@@ -843,21 +842,26 @@ const DOC_CATEGORIES: DocCategory[] = [
         pdfFile: "Adhikar_2016_2020.pdf",
         size: "6 MB",
       },
+      {
+        title: "कुंभी नोंद ",
+        pdfFile: "Kumbhi_Nonan.pdf",
+        size: "2 MB",
+      }
     ],
   },
-  {
-    label: "नागरिकांची सनद",
-    items: [
-      {
-        title: "कृषी विभाग समिती संगमनेर",
-        pdfFile: "CitizenCharter_Krushi.pdf",
-      },
-      {
-        title: "पंचायत समिती संगमनेर-नागरिकांची सनद",
-        pdfFile: "CitizenCharter_ZP.pdf",
-      },
-    ],
-  },
+  // {
+  //   label: "नागरिकांची सनद",
+  //   items: [
+  //     {
+  //       title: "कृषी विभाग समिती संगमनेर",
+  //       pdfFile: "CitizenCharter_Krushi.pdf",
+  //     },
+  //     {
+  //       title: "पंचायत समिती संगमनेर-नागरिकांची सनद",
+  //       pdfFile: "CitizenCharter_ZP.pdf",
+  //     },
+  //   ],
+  // },
   // {
   //   label: "स्थायी समिती सभा इतिवृत्त",
   //   items: [
@@ -911,11 +915,10 @@ export const Documents = () => {
           <button
             key={idx}
             onClick={() => setActiveTab(idx)}
-            className={`px-4 py-2 rounded-full text-sm font-bold border transition-all ${
-              activeTab === idx
+            className={`px-4 py-2 rounded-full text-sm font-bold border transition-all ${activeTab === idx
                 ? 'bg-blue-900 text-white border-blue-900'
                 : 'bg-white text-gray-600 border-gray-300 hover:border-blue-900 hover:text-blue-900'
-            }`}
+              }`}
           >
             {cat.label}
           </button>
@@ -930,9 +933,8 @@ export const Documents = () => {
         {active.items.map((item, i) => (
           <div
             key={i}
-            className={`grid grid-cols-[1fr_auto_auto] px-4 py-3 items-center border-b border-gray-100 ${
-              i % 2 === 0 ? 'bg-white' : 'bg-gray-50'
-            } hover:bg-blue-50 transition-colors`}
+            className={`grid grid-cols-[1fr_auto_auto] px-4 py-3 items-center border-b border-gray-100 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'
+              } hover:bg-blue-50 transition-colors`}
           >
             <div>
               <p className="text-sm text-gray-800">{item.title}</p>

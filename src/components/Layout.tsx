@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, Phone, Mail, Facebook, Search } from 'lucide-react';
 import { cn } from '@/src/lib/utils';
+import logo from '../images/logo.jpeg';
 
 const navItems = [
   { name: 'मुख्यपृष्ठ', path: '/' },
@@ -72,14 +73,25 @@ export const Header = () => {
             <span className="flex items-center gap-1"><Mail size={12} /> 	bdosangamner@rediffmail.com</span>
           </div>
           <div className="flex gap-4 items-center">
-            <div className="flex gap-2 border-r border-white/20 pr-4">
-              <a href="https://www.facebook.com/share/17KxUgoVvR/" className="cursor-pointer hover:text-orange-gov"><Facebook size={20} /></a>
+            <div className="relative group flex gap-2 border-r border-white/20 pr-4">
+              <a
+                href="https://www.facebook.com/share/17KxUgoVvR/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer hover:text-orange-gov"
+              >
+                <Facebook size={20} />
+              </a>
+
+              <span className="absolute bottom-[-30px] left-1/2 -translate-x-1/2 whitespace-nowrap bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
+                Panchayat Samiti Sangamner Facebook Page
+              </span>
             </div>
-            <div className="flex gap-3">
+            {/* <div className="flex gap-3">
               <span className="cursor-pointer hover:underline">A-</span>
               <span className="cursor-pointer hover:underline font-bold">A</span>
               <span className="cursor-pointer hover:underline">A+</span>
-            </div>
+            </div> */}
             <select className="bg-transparent border-none outline-none cursor-pointer text-white text-[11px]">
               <option className="text-black">Marathi</option>
               <option className="text-black">English</option>
@@ -90,19 +102,21 @@ export const Header = () => {
 
       {/* Main Header */}
       <div className="bg-white border-b border-gray-100">
-        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-          <Link to="/" className="flex items-center gap-3">
-            <img src="https://nagarzp.gov.in/wp-content/themes/sdo-theme/images/emblem.png" alt="Emblem" className="h-14" />
+        
+        <div className="cover mx-auto px-4 py-3">
+          <Link to="/" className="flex gap-3">
+               
+            <img src="https://nagarzp.gov.in/wp-content/themes/sdo-theme/images/emblem.png" alt="Emblem" className="h-15 mt-3" />
+            <img src="https://cdnbbsr.s3waas.gov.in/s385b75d04f478d3841e38eb64aefdb05a/uploads/2025/04/20250415379430117.png" alt="Digital India" className="h-13 mt-3" />
+            <img src="https://cdnbbsr.s3waas.gov.in/s385b75d04f478d3841e38eb64aefdb05a/uploads/2025/04/202504111579669448.png" alt="Swachh Bharat" className="h-13 mt-3" />  
+            {/* <img src={logo} alt="Swachh Bharat" className="h-14 mt-3" />     */}
             <div className="border-l border-gray-200 pl-3">
               <p className="text-[11px] md:text-[13px] text-orange-gov font-bold uppercase tracking-wider">महाराष्ट्र शासन,</p>
+               <p className="text-[11px] md:text-[13px] text-orange-gov font-bold uppercase tracking-wider">ग्रामविकास विभाग,</p>
               <p className="text-[11px] md:text-[13px] text-orange-gov font-bold uppercase tracking-wider">जिल्हा परिषद अहिल्यानगर,</p>
               <h1 className="text-xl md:text-2xl font-bold text-blue-gov leading-tight">पंचायत समिती संगमनेर</h1>
             </div>
           </Link>
-          <div className="hidden lg:flex items-center gap-4">
-            <img src="https://cdnbbsr.s3waas.gov.in/s385b75d04f478d3841e38eb64aefdb05a/uploads/2025/04/20250415379430117.png" alt="Digital India" className="h-10" />
-            <img src="https://cdnbbsr.s3waas.gov.in/s385b75d04f478d3841e38eb64aefdb05a/uploads/2025/04/202504111579669448.png" alt="Swachh Bharat" className="h-10" />
-          </div>
         </div>
       </div>
 
@@ -193,7 +207,7 @@ export const Header = () => {
 export const Footer = () => {
   const footerLinks = [
     { name: 'अभिप्राय', path: '/#' },
-     { name: 'सूचना', path: '/notices' },
+    { name: 'सूचना', path: '/notices' },
     { name: 'वेबसाइट धोरणे', path: '#' },
     { name: 'आमच्याशी संपर्क साधा', path: '/admin-depts/ps' },
     // { name: 'मदत', path: '/help' },
@@ -243,7 +257,7 @@ export const Footer = () => {
             ))}
           </div>
           <div className="text-center text-[11px] text-blue-200 flex justify-between items-center flex-wrap gap-2">
-            <p>© २०२६ पंचायत समिती संगमनेर. सर्व हक्क राखीव.</p>
+            <p>© २०२४ पंचायत समिती संगमनेर. सर्व हक्क राखीव.</p>
             <p className="mt-1">
               डिझाइन आणि विकसित:{" "}
               <a
