@@ -21,7 +21,9 @@ import {
   Citizens,
   Documents,
   Notices,
-  Media
+  Media,
+  WebInfoManager,
+  HelpSection
 } from './pages/Pages';
 
 export default function App() {
@@ -51,7 +53,6 @@ export default function App() {
             {/* Admin Departments */}
             <Route path="/admin-depts/zp" element={<AdminDepts type="zp" />} />
             <Route path="/admin-depts/ps" element={<AdminDepts type="ps" />} />
-
             {/* Citizens */}
             <Route path="/citizens/grievance" element={<Citizens section="grievance" />} />
             <Route path="/citizens/services" element={<Citizens section="services" />} />
@@ -62,12 +63,16 @@ export default function App() {
             {/* Documents */}
             <Route path="/documents" element={<Documents />} />
 
+            {/* Web Info Manager */}
+            <Route path="/web-info-manager" element={<WebInfoManager />} />
+            <Route path="/help" element={<HelpSection />} />
+
             {/* Notices */}
             <Route path="/notices" element={<Notices />} />
 
             {/* Media */}
-            <Route path="/media/gallery" element={<Media type="gallery" />} />
-            <Route path="/media/stories" element={<Media type="stories" />} />
+            {/* <Route path="/media/gallery" element={<Media type="gallery" />} />
+            <Route path="/media/stories" element={<Media type="stories" />} /> */}
           </Routes>
         </main>
         <Footer />

@@ -192,19 +192,20 @@ export const Header = () => {
 
 export const Footer = () => {
   const footerLinks = [
-    { name: 'अभिप्राय', path: '#' },
+    { name: 'अभिप्राय', path: '/#' },
+     { name: 'सूचना', path: '/notices' },
     { name: 'वेबसाइट धोरणे', path: '#' },
-    { name: 'आमच्याशी संपर्क साधा', path: '#' },
-    { name: 'मदत', path: '#' },
-    { name: 'वेब माहिती व्यवस्थापक', path: '#' },
-    { name: 'संकेतस्थळ अभ्यागत सारांश', path: '#' },
-    { name: 'हेल्पलाइन', path: '#' },
-    { name: 'साइट मॅप', path: '#' },
+    { name: 'आमच्याशी संपर्क साधा', path: '/admin-depts/ps' },
+    { name: 'मदत', path: '/help' },
+    { name: 'वेब माहिती व्यवस्थापक', path: '/web-info-manager' },
+    // { name: 'संकेतस्थळ अभ्यागत सारांश', path: '#' },
+    // { name: 'हेल्पलाइन', path: '#' },
+    // { name: 'साइट मॅप', path: '#' },
   ];
 
   return (
     <footer className="bg-blue-gov text-white">
-      <div className="bg-white/5 py-8">
+      {/* <div className="bg-white/5 py-8">
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <h3 className="text-lg font-bold mb-4 border-b border-orange-gov/30 pb-2 inline-block">महत्वाचे दुवे</h3>
@@ -214,7 +215,7 @@ export const Footer = () => {
               <Link to="/notices" className="hover:text-orange-gov flex items-center gap-1">» सूचना</Link>
               <Link to="/directory" className="hover:text-orange-gov flex items-center gap-1">» निर्देशिका</Link>
               <a href="https://www.maharashtra.gov.in" target="_blank" className="hover:text-orange-gov flex items-center gap-1">» महाराष्ट्र शासन</a>
-              <a href="https://sangamnerps.netlify.app/" target="_blank" className="hover:text-orange-gov flex items-center gap-1">» पंचायत समिती संगमनेर</a>
+              <a href="https://nagarzp.gov.in/" target="_blank" className="hover:text-orange-gov flex items-center gap-1">» जिल्हा परिषद अहिल्यानगर</a>
             </div>
           </div>
           <div>
@@ -232,7 +233,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="bg-blue-900/50 py-4 border-t border-white/10">
         <div className="container mx-auto px-4">
@@ -241,8 +242,8 @@ export const Footer = () => {
               <Link key={link.name} to={link.path} className="hover:text-orange-gov border-r border-white/20 pr-6 last:border-0">{link.name}</Link>
             ))}
           </div>
-          <div className="text-center text-[11px] text-blue-200">
-            <p>© २०२6 पंचायत समिती संगमनेर. सर्व हक्क राखीव.</p>
+          <div className="text-center text-[11px] text-blue-200 flex justify-between items-center flex-wrap gap-2">
+            <p>© २०२६ पंचायत समिती संगमनेर. सर्व हक्क राखीव.</p>
             <p className="mt-1">
               डिझाइन आणि विकसित:{" "}
               <a

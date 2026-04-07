@@ -11,9 +11,9 @@ export const ContentPage = ({ title, publishedDate, children }: PageProps) => {
     <div className="container mx-auto px-4 py-12 max-w-5xl">
       <div className="mb-8 border-b-2 border-orange-gov/20 pb-4">
         <h2 className="text-3xl font-bold text-blue-gov mb-2">{title}</h2>
-        {publishedDate && (
+        {/* {publishedDate && (
           <p className="text-sm text-gray-500 font-bold">प्रकाशित दिनांक: {publishedDate}</p>
-        )}
+        )} */}
       </div>
       <div className="prose prose-blue max-w-none text-gray-700 leading-relaxed">
         {children}

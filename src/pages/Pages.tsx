@@ -15,6 +15,8 @@ interface Scheme {
   pdfLabel: string;
 }
 
+
+
 // ─── State Schemes Data ───────────────────────────────────────────────────────
 const STATE_SCHEMES: Scheme[] = [
   {
@@ -28,6 +30,7 @@ const STATE_SCHEMES: Scheme[] = [
     pdfFile: "LadkiBahin.pdf",
     pdfLabel: "LadkiBahin.pdf",
   },
+  
   // {
   //   id: 2,
   //   name: "महाराष्ट्र शेतकरी कर्जमाफी योजना",
@@ -963,9 +966,169 @@ export const Documents = () => {
   );
 };
 
+export const WebInfoManager = () => (
+  <ContentPage title="वेब माहिती व्यवस्थापक">
+    <div className="max-w-3xl mx-auto px-4 py-6">
+      <WebInfoManagerCard />
+    </div>
+  </ContentPage>
+);
+
+export const HelpSection = () => (
+  <ContentPage title="मदत">
+    <div className="max-w-3xl mx-auto px-4 py-6">
+      <HelpSectionContent />
+    </div>
+  </ContentPage>
+);
+
 // ─── Notices ─────────────────────────────────────────────────────────────────
 // Notices is in its own file → src/Notices.tsx
 export { Notices } from './Notices';
 
 // ─── Media ────────────────────────────────────────────────────────────────────
 export { Media } from './Media';
+
+const WebInfoManagerCard = () => {
+  return (
+    <div className="bg-white shadow-md rounded-xl p-5 border border-gray-200 mb-6">
+      <h2 className="text-lg font-bold text-blue-900 border-l-4 border-orange-500 pl-3 mb-4">
+        वेब माहिती व्यवस्थापक
+      </h2>
+
+      <div className="space-y-2 text-sm text-gray-700">
+        <p><span className="font-semibold">नाव:</span> श्री. प्रविण अण्णासाहेब सिनारे</p>
+        <p><span className="font-semibold">पदनाम:</span> गट विकास अधिकारी (उ.श्रे.)</p>
+        <p><span className="font-semibold">पत्ता:</span> पंचायत समिती संगमनेर 422605</p>
+        <p><span className="font-semibold">दूरध्वनी:</span> 02425-272798</p>
+        <p>
+          <span className="font-semibold">ईमेल:</span>{" "}
+          <a
+            href="mailto:bdosangamner@rediffmail.com"
+            className="text-blue-600 hover:underline"
+          >
+            bdosangamner@rediffmail.com
+          </a>
+        </p>
+      </div>
+    </div>
+  );
+};
+
+const HelpSectionContent = () => {
+  return (
+    <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 mt-6">
+      {/* Title */}
+      <h2 className="text-2xl font-bold text-gray-800 border-l-4 border-blue-900 pl-3 mb-4">
+        मदत
+      </h2>
+
+      {/* Description */}
+      <p className="text-gray-700 mb-6 leading-relaxed">
+        या संकेतस्थळावरील माहिती / पृष्ठांवर प्रवेश / नॅव्हिगेट करणे आपणास कठीण जाते आहे का?
+        या भागात हे संकेतस्थळ ब्राउझ करताना आपल्याला एक सुखद अनुभव यावा यासाठी मदत करण्याचा प्रयत्न केला आहे.
+      </p>
+
+      {/* Usability Section */}
+      <h3 className="text-lg font-bold text-blue-900 mb-2">वापरसुलभता</h3>
+      <p className="text-gray-700 mb-6 leading-relaxed">
+        कोणत्याही उपकरणांचा, तंत्रज्ञानाचा किवा क्षमतेचा वापर करून हे संकेतस्थळ बघता येईल हे सुनिश्चित करण्यासाठी सर्वोत्तम प्रयत्न केले गेले आहेत.
+        संकेत स्थळला भेट देणाऱ्या व्यक्तीला जास्तीत जास्त उपयोगता व सुलभता व्हावी या उद्देशाने हे संकेत स्थळ तयार करण्यात आले आहे.
+        दिव्यांग व्यक्तींकरीता या वेबसाइटवरील सर्व माहिती उपलब्ध व्ह्यावी हे सुनिश्चित करण्यासाठी सर्वोत्तम प्रयत्न केले गेले आहेत.
+        उदाहरणार्थ, अंध दिव्यांग असलेले वापरकर्ता सहायक तंत्रज्ञानाचा वापर करून पोर्टलचा प्रवेश करू शकतो,
+        जसे की स्क्रीन वाचक. ही वेबसाइट वर्ल्ड वाइड वेब कंसोर्टियम (डब्ल्यू3 सी) द्वारे घालून दिलेल्या
+        वेब सामग्री प्रवेशनिर्धारण मार्गदर्शक तत्त्वांचे (डब्ल्यूसीएजी 2.0) स्तर एएची पूर्तता करते.
+      </p>
+
+      {/* Screen Reader Section */}
+      <h3 className="text-lg font-bold text-blue-900 mb-3 border-l-4 border-orange-500 pl-3">
+        स्क्रीन रीडर प्रवेश
+      </h3>
+
+      {/* Table */}
+      <div className="overflow-x-auto">
+        <table className="w-full border border-gray-300 text-sm">
+          <thead className="bg-gray-200 text-gray-800">
+            <tr>
+              <th className="border p-3 text-left">स्क्रीन रीडर</th>
+              <th className="border p-3 text-left">संकेतस्थळ</th>
+              <th className="border p-3 text-left">विनामूल्य / व्यावसायिक</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr className="hover:bg-gray-50">
+              <td className="border p-3">स्क्रीन ऍक्सेस फॉर ऑल (SAFA)</td>
+              <td className="border p-3 text-blue-600">
+                <a href="https://lists.sourceforge.net/lists/listinfo/safa-developer" target="_blank">
+                  लिंक
+                </a>
+              </td>
+              <td className="border p-3">मोफत</td>
+            </tr>
+
+            <tr className="hover:bg-gray-50">
+              <td className="border p-3">NVDA</td>
+              <td className="border p-3 text-blue-600">
+                <a href="https://www.nvaccess.org/download/" target="_blank">
+                  लिंक
+                </a>
+              </td>
+              <td className="border p-3">मोफत</td>
+            </tr>
+
+            <tr className="hover:bg-gray-50">
+              <td className="border p-3">System Access To Go</td>
+              <td className="border p-3 text-blue-600">
+                <a href="http://www.satogo.com" target="_blank">
+                  लिंक
+                </a>
+              </td>
+              <td className="border p-3">मोफत</td>
+            </tr>
+
+            <tr className="hover:bg-gray-50">
+              <td className="border p-3">Thunder</td>
+              <td className="border p-3 text-blue-600">
+                <a href="http://www.webbie.org.uk/thunder" target="_blank">
+                  लिंक
+                </a>
+              </td>
+              <td className="border p-3">मोफत</td>
+            </tr>
+
+            <tr className="hover:bg-gray-50">
+              <td className="border p-3">HAL</td>
+              <td className="border p-3 text-blue-600">
+                <a href="http://www.yourdolphin.co.uk/productdetail.asp?id=5" target="_blank">
+                  लिंक
+                </a>
+              </td>
+              <td className="border p-3">व्यावसायिक</td>
+            </tr>
+
+            <tr className="hover:bg-gray-50">
+              <td className="border p-3">JAWS</td>
+              <td className="border p-3 text-blue-600">
+                <a href="http://www.freedomscientific.com/Downloads/JAWS" target="_blank">
+                  लिंक
+                </a>
+              </td>
+              <td className="border p-3">व्यावसायिक</td>
+            </tr>
+
+            <tr className="hover:bg-gray-50">
+              <td className="border p-3">Supernova</td>
+              <td className="border p-3 text-blue-600">
+                <a href="http://www.yourdolphin.co.uk/productdetail.asp?id=1" target="_blank">
+                  लिंक
+                </a>
+              </td>
+              <td className="border p-3">व्यावसायिक</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+};
