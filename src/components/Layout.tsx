@@ -94,7 +94,8 @@ export const Header = () => {
           <Link to="/" className="flex items-center gap-3">
             <img src="https://nagarzp.gov.in/wp-content/themes/sdo-theme/images/emblem.png" alt="Emblem" className="h-14" />
             <div className="border-l border-gray-200 pl-3">
-              <p className="text-[11px] md:text-[13px] text-orange-gov font-bold uppercase tracking-wider">जिल्हा परिषद अहिल्यानगर, महाराष्ट्र शासन ,</p>
+              <p className="text-[11px] md:text-[13px] text-orange-gov font-bold uppercase tracking-wider">महाराष्ट्र शासन ,</p>
+              <p className="text-[11px] md:text-[13px] text-orange-gov font-bold uppercase tracking-wider">जिल्हा परिषद अहिल्यानगर,</p>
               <h1 className="text-xl md:text-2xl font-bold text-blue-gov leading-tight">पंचायत समिती संगमनेर</h1>
             </div>
           </Link>
