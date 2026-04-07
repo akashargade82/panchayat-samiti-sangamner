@@ -836,7 +836,7 @@ const DOC_CATEGORIES: DocCategory[] = [
     label: "परिपत्रके / सूचना",
     items: [
       {
-        title: "जिल्हा परिषदेचे खाते प्रमुख व विकास अधिकारी यांना प्रदान केलेले अधिकार (सन 2016 ते सन 2020 पर्यंत सुधारित)",
+        title: "खाते प्रमुख व विकास अधिकारी यांना प्रदान केलेले अधिकार (सन 2016 ते सन 2020 पर्यंत सुधारित)",
         pdfFile: "Adhikar_2016_2020.pdf",
         size: "6 MB",
       },
@@ -846,7 +846,7 @@ const DOC_CATEGORIES: DocCategory[] = [
     label: "नागरिकांची सनद",
     items: [
       {
-        title: "कृषी विभाग-जिल्हा समिती संगमनेर",
+        title: "कृषी विभाग समिती संगमनेर",
         pdfFile: "CitizenCharter_Krushi.pdf",
       },
       {

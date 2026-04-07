@@ -183,7 +183,7 @@ const DeptTable: React.FC<{ dept: Department; defaultOpen?: boolean }> = ({
               {dept.officers.map((o, i) => (
                 <tr
                   key={i}
-                  className={`border-b border-gray-100 last:border-0 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'
+                  className={`border-b border-gray-100 last:border-0 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50 whitespace-nowrap'
                     } hover:bg-blue-50 transition-colors`}
                 >
                   <td className="p-3 text-gray-400 font-medium">{i + 1}</td>
@@ -237,14 +237,14 @@ export const Directory = () => {
       </div>
 
       {/* Summary chips */}
-      <div className="flex flex-wrap gap-2 mb-6">
+      {/* <div className="flex flex-wrap gap-2 mb-6">
         <span className="px-3 py-1 bg-blue-900 text-white text-xs font-bold rounded-full">
-          एकूण विभाग: {DEPARTMENTS.length}
+          एकूण विभाग
         </span>
         <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold rounded-full">
-          एकूण अधिकारी: {DEPARTMENTS.reduce((acc, d) => acc + d.officers.length, 0)}
+          एकूण अधिकारी
         </span>
-      </div>
+      </div> */}
 
       {/* Department Tables */}
       <div className="space-y-4">
