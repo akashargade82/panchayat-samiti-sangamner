@@ -311,9 +311,9 @@ export const Media = () => {
 
   const tabs: { key: MediaTab; label: string }[] = [
     { key: 'presidents', label: 'माजी अध्यक्ष' },
-    { key: 'ceos',       label: 'माजी मु.का.अ.' },
-    { key: 'gallery',    label: 'छायाचित्र दालन' },
-    { key: 'stories',    label: 'यशोगाथा' },
+    { key: 'ceos', label: 'माजी मु.का.अ.' },
+    { key: 'gallery', label: 'छायाचित्र दालन' },
+    { key: 'stories', label: 'यशोगाथा' },
   ];
 
   return (
@@ -323,11 +323,10 @@ export const Media = () => {
           <button
             key={t.key}
             onClick={() => setActiveTab(t.key)}
-            className={`px-5 py-2 rounded-full text-sm font-bold border transition-all ${
-              activeTab === t.key
+            className={`px-5 py-2 rounded-full text-sm font-bold border transition-all ${activeTab === t.key
                 ? 'bg-blue-900 text-white border-blue-900'
                 : 'bg-white text-gray-600 border-gray-300 hover:border-blue-900 hover:text-blue-900'
-            }`}
+              }`}
           >
             {t.label}
           </button>
@@ -335,9 +334,9 @@ export const Media = () => {
       </div>
 
       {activeTab === 'presidents' && <FormerPresidents />}
-      {activeTab === 'ceos'       && <FormerCEOs />}
-      {activeTab === 'gallery'    && <GallerySection />}
-      {activeTab === 'stories'    && <StoriesSection />}
+      {activeTab === 'ceos' && <FormerCEOs />}
+      {activeTab === 'gallery' && <GallerySection />}
+      {activeTab === 'stories' && <StoriesSection />}
     </ContentPage>
   );
 };

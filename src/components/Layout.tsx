@@ -50,10 +50,10 @@ const navItems = [
   // {
   //   name: 'मीडिया कॉर्नर',
   //   path: '/media/gallery',
-    // children: [
-    //   { name: 'छायाचित्र दालन', path: '/media/gallery' },
-    //   { name: 'यशोगाथा', path: '/media/stories' },
-    // ],
+  // children: [
+  //   { name: 'छायाचित्र दालन', path: '/media/gallery' },
+  //   { name: 'यशोगाथा', path: '/media/stories' },
+  // ],
   // },
 ];
 

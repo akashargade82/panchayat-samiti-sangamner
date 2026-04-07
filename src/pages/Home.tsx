@@ -4,7 +4,6 @@ import { Bell, FileText, Users, Info, ExternalLink, Phone, ShieldAlert, HeartPul
 import { Link } from 'react-router-dom';
 import bdoImage from '../images/bdo.jpeg';
 
-// ─── Types ───────────────────────────────────────────────────────────────────
 interface GpInfoType {
   GPNAME?: string;
   VILLAGE?: string;
@@ -17,7 +16,6 @@ interface HomeProps {
   gpInfo?: GpInfoType;
 }
 
-// ─── Notices ─────────────────────────────────────────────────────────────────
 export const notices = [
   { id: 1, date: "१५", month: "मार्च", title: "ग्रामपंचायत निवडणूक २०२४ - मतदार यादी प्रसिद्धीबाबत.", published: "१५ मार्च २०२४", category: "घोषणा", pdf: "/pdfs/notice1.pdf" },
   { id: 2, date: "१०", month: "मार्च", title: "आरोग्य विभाग – साहित्य खरेदी दरपत्रक सूचना", published: "१० मार्च २०२४", category: "निविदा", pdf: "/pdfs/notice2.pdf" },
@@ -27,7 +25,6 @@ export const notices = [
   { id: 6, date: "१२", month: "फेब्रुवारी", title: "शाळा पोषण आहार योजनेबाबत आवश्यक सूचना", published: "१२ फेब्रुवारी २०२४", category: "घोषणा", pdf: "/pdfs/notice6.pdf" },
 ];
 
-// ─── Leaders ──────────────────────────────────────────────────────────────────
 const STATIC_LEADERS = [
   { name: "मा.ना.श्री. देवेंद्र फडणवीस", role: "मुख्यमंत्री, महाराष्ट्र राज्य", image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/20241226554268834.png" },
   { name: "मा.ना.श्री. एकनाथ शिंदे", role: "उपमुख्यमंत्री, महाराष्ट्र राज्य", image: "https://cdnbbsr.s3waas.gov.in/s3e6c2dc3dee4a51dcec3a876aa2339a78/uploads/2024/12/20241210519881483.jpeg" },
@@ -39,7 +36,6 @@ const STATIC_LEADERS = [
   { name: "मा.ना.श्री प्रविण अण्णासाहेब सिनारे", role: "गट विकास अधिकारी (उ.श्रे.), पंचायत समिती संगमनेर", image: bdoImage },
 ];
 
-// ─── Banner Slides — component bahar, sirf data (hooks nahi) ─────────────────
 const bannerSlides = [
   {
     image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwepifp9GbqHRIZDE8N5eUEKVGxMi8w7uN02F5RYCuHZThQD6Z-cOtGJiS1kbDQsseiauBd0DzbnEtRI5OBxMucLq7PwLJ8sQuMry3aRytCh8YEgkO2e1w7k2CtovIIYuvf8zxHk4MA=w1920-h1440",
@@ -56,9 +52,20 @@ const bannerSlides = [
     title: "मारुती मंदिर, पेमगिरी",
     subtitle: "आस्था व श्रद्धेचे केंद्र",
   },
+  {
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweovkYnfpUQQc67NzcgGICruJ1vcUSIdspdQjY8pDbXRY77-YyhIQRDmGi803e5pjKdZxM1pWevt4apvNTIq4B_HO3qzuRqgJMmNA9jcAJM2ZeLlaz_992RInhRQp26_ZacNrjc=w1920-h1080",
+    title: "चंदनापुरी घाट, संगमनेर",
+    subtitle: "सुंदर घाट व निसर्ग दृश्य",
+  },
+
+  // ✅ New Added (Vatvruksh)
+  {
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweomZu5B6j_kpLkedIWENb7gkR85n9jy69Xq5Hfmk4qMeipGyZsuM8Erzf8-ZTGURL5dppoBCS9lMjuFhRUnbFThgPx9tITVmVGwLgAgEqw5bheHCRVzSmP_Njmso8n5Ouo9IKy3YA=w1920-h1080",
+    title: "वटवृक्ष, पेमगिरी",
+    subtitle: "ऐतिहासिक व विशाल वडाचे झाड",
+  },
 ];
 
-// ─── Emergency Numbers ────────────────────────────────────────────────────────
 const emergencyNumbers = [
   { name: "पोलीस", number: "100", icon: <ShieldAlert className="text-blue-600" size={22} /> },
   { name: "रुग्णवाहिका", number: "108", icon: <HeartPulse className="text-red-600" size={22} /> },
@@ -66,75 +73,77 @@ const emergencyNumbers = [
   { name: "महिला हेल्पलाइन", number: "1091", icon: <Siren className="text-purple-600" size={22} /> },
 ];
 
-// ─── Component ────────────────────────────────────────────────────────────────
 export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
 
-  // ✅ Hooks ANDAR hain — yahi fix hai
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    const timer = setInterval(() => {
+    const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % bannerSlides.length);
-    }, 4000);
-    return () => clearInterval(timer);
+    }, 3000);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="flex flex-col min-h-screen">
 
-      {/* ── Hero Banner with Slideshow ──────────────────────────────────────── */}
-      <section className="relative h-[400px] md:h-[500px] overflow-hidden mt-4">
+      <section className="flex justify-center mt-10">
+        <div className="relative w-[90%] md:w-[80%] h-[300px] md:h-[400px] overflow-hidden rounded-[50px] md:rounded-[80px] shadow-lg bg-gray-100">
 
-        {bannerSlides.map((slide, idx) => (
-          <div
-            key={idx}
-            className="absolute inset-0 transition-opacity duration-1000"
-            style={{ opacity: idx === currentSlide ? 1 : 0 }}
-          >
-            <img
-              src={slide.image}
-              alt={slide.title}
-              className="w-full h-full object-contain object-center"
-            />
-          </div>
-        ))}
-
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-gov/80 to-transparent flex items-center px-4">
-          <div className="container mx-auto">
-            <motion.div
-              key={currentSlide}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-white max-w-xl"
+          {bannerSlides.map((slide, idx) => (
+            <div
+              key={idx}
+              className="absolute inset-0 transition-opacity duration-1000"
+              style={{ opacity: idx === currentSlide ? 1 : 0 }}
             >
-              {/* <h2 className="text-3xl md:text-5xl font-bold mb-2 leading-tight">
+              <img
+                src={slide.image}
+                alt={slide.title}
+                className="w-full h-full object-contain object-center"
+              />
+            </div>
+          ))}
+
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-gov/70 to-transparent flex items-center px-4">
+            <div className="container mx-auto">
+              <motion.div
+                key={currentSlide}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                className="text-white max-w-xl"
+              >
+                {/* <h2 className="text-3xl md:text-5xl font-bold mb-2 leading-tight">
                 पंचायत समिती{gpInfo?.TALUKA ? ` ${gpInfo.TALUKA}` : " संगमनेर"} मध्ये आपले स्वागत आहे
               </h2> */}
-              {/* <p className="text-xl font-semibold text-orange-300 mb-2">
-                {bannerSlides[currentSlide].title}
-              </p>
-              <div className="h-1 w-24 bg-orange-gov mb-4" />
-              <p className="text-lg text-blue-50">
-                {bannerSlides[currentSlide].subtitle}
-              </p> */}
-            </motion.div>
+                <p className="text-xl font-semibold text-orange-300 mb-2">
+                  {bannerSlides[currentSlide].title}
+                </p>
+                <div className="h-1 w-24 bg-orange-gov mb-4" />
+                <p className="text-lg text-orange-300">
+                  {bannerSlides[currentSlide].subtitle}
+                </p>
+              </motion.div>
+            </div>
           </div>
-        </div>
 
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-          {bannerSlides.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setCurrentSlide(idx)}
-              className={`w-3 h-3 rounded-full transition-all ${idx === currentSlide ? 'bg-orange-gov scale-125' : 'bg-white/60'
-                }`}
-            />
-          ))}
+          {/* Dots */}
+          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+            {bannerSlides.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrentSlide(idx)}
+                className={`w-3 h-3 rounded-full transition-all ${idx === currentSlide
+                  ? "bg-orange-gov scale-125"
+                  : "bg-white/60"
+                  }`}
+              />
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* ── Leaders Section ──────────────────────────────────────────────────── */}
       <section className="py-10 bg-white border-b border-gray-100">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -169,7 +178,6 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
         </div>
       </section>
 
-      {/* ── Main Content Grid ─────────────────────────────────────────────────── */}
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-8">
 
@@ -207,7 +215,6 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
               </div>
             </div>
 
-            {/* Emergency Numbers */}
             <div className="bg-white rounded shadow-sm border border-gray-200 p-6">
               <h3 className="text-lg font-bold mb-6 text-blue-gov border-b border-orange-gov/20 pb-2 flex items-center gap-2">
                 <ShieldAlert size={20} className="text-orange-gov" />
@@ -228,7 +235,6 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
             </div>
           </div>
 
-          {/* Right: Quick Links & Contact */}
           <div className="lg:col-span-4 space-y-6">
 
             <div className="bg-white rounded shadow-sm border border-gray-200 p-6">
@@ -287,7 +293,6 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
         </div>
       </section>
 
-      {/* ── Services Grid ─────────────────────────────────────────────────────── */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-12 text-blue-gov">महत्वाच्या सेवा</h2>
