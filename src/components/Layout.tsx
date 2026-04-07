@@ -196,7 +196,7 @@ export const Footer = () => {
      { name: 'सूचना', path: '/notices' },
     { name: 'वेबसाइट धोरणे', path: '#' },
     { name: 'आमच्याशी संपर्क साधा', path: '/admin-depts/ps' },
-    { name: 'मदत', path: '/help' },
+    // { name: 'मदत', path: '/help' },
     { name: 'वेब माहिती व्यवस्थापक', path: '/web-info-manager' },
     // { name: 'संकेतस्थळ अभ्यागत सारांश', path: '#' },
     // { name: 'हेल्पलाइन', path: '#' },
