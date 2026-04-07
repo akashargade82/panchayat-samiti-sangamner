@@ -117,11 +117,11 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
                 {/* <h2 className="text-3xl md:text-5xl font-bold mb-2 leading-tight">
                 पंचायत समिती{gpInfo?.TALUKA ? ` ${gpInfo.TALUKA}` : " संगमनेर"} मध्ये आपले स्वागत आहे
               </h2> */}
-                <p className="text-xl font-semibold text-orange-300 mb-2">
+                <p className="text-xl font-semibold text-orange-500 mb-2">
                   {bannerSlides[currentSlide].title}
                 </p>
                 <div className="h-1 w-24 bg-orange-gov mb-4" />
-                <p className="text-lg text-orange-300">
+                <p className="text-lg text-orange-500">
                   {bannerSlides[currentSlide].subtitle}
                 </p>
               </motion.div>
