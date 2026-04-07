@@ -13,7 +13,7 @@ const navItems = [
       { name: 'दृष्टी आणि ध्येय', path: '/about/vision' },
       { name: 'उद्दिष्टे आणि कार्ये', path: '/about/objectives' },
       { name: 'प्रशासकीय रचना', path: '/about/structure' },
-      { name: 'संस्था', path: '/about/organizations' },
+      // { name: 'संस्था', path: '/about/organizations' },
       { name: 'कोणाचे कोण', path: '/about/whos-who' },
     ],
   },
@@ -40,7 +40,7 @@ const navItems = [
     children: [
       { name: 'तक्रार निवारण', path: '/citizens/grievance' },
       { name: 'सेवा', path: '/citizens/services' },
-      { name: 'सार्वजनिक सेवेचा अधिकार', path: '/citizens/rts' },
+      // { name: 'सार्वजनिक सेवेचा अधिकार', path: '/citizens/rts' },
       // { name: 'अर्ज', path: '/citizens/forms' },
       { name: 'स्वयम पोर्टल', path: '/citizens/swayam' },
     ],

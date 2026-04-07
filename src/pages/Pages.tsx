@@ -28,30 +28,30 @@ const STATE_SCHEMES: Scheme[] = [
     pdfFile: "LadkiBahin.pdf",
     pdfLabel: "LadkiBahin.pdf",
   },
+  // {
+  //   id: 2,
+  //   name: "महाराष्ट्र शेतकरी कर्जमाफी योजना",
+  //   date: "२०२३-१२-१५",
+  //   area: "महाराष्ट्र राज्य",
+  //   benefit: "शेतकऱ्यांचे ₹२ लाखांपर्यंतचे पीककर्ज माफ केले जाते.",
+  //   howToApply: "तालुका कृषी अधिकारी कार्यालयात अर्ज सादर करावा. आवश्यक कागदपत्रे: ७/१२ उतारा, बँक पासबुक.",
+  //   website: "https://aaplesarkar.mahaonline.gov.in",
+  //   pdfFile: "ShatkariKarjMafi.pdf",
+  //   pdfLabel: "ShatkariKarjMafi.pdf",
+  // },
+  // {
+  //   id: 3,
+  //   name: "राज्य ग्रामीण पेयजल योजना",
+  //   date: "२०२३-११-०१",
+  //   area: "ग्रामीण महाराष्ट्र",
+  //   benefit: "प्रत्येक घराला नळाने शुद्ध पाणी पुरविणे. ग्रामपंचायतीस अनुदान.",
+  //   howToApply: "ग्रामपंचायतीमार्फत जिल्हा जलजीवन मिशन कार्यालयात प्रस्ताव सादर करावा.",
+  //   website: "https://aaplesarkar.mahaonline.gov.in",
+  //   pdfFile: "PanchatPdf.pdf",
+  //   pdfLabel: "PanchatPdf.pdf",
+  // },
   {
     id: 2,
-    name: "महाराष्ट्र शेतकरी कर्जमाफी योजना",
-    date: "२०२३-१२-१५",
-    area: "महाराष्ट्र राज्य",
-    benefit: "शेतकऱ्यांचे ₹२ लाखांपर्यंतचे पीककर्ज माफ केले जाते.",
-    howToApply: "तालुका कृषी अधिकारी कार्यालयात अर्ज सादर करावा. आवश्यक कागदपत्रे: ७/१२ उतारा, बँक पासबुक.",
-    website: "https://aaplesarkar.mahaonline.gov.in",
-    pdfFile: "ShatkariKarjMafi.pdf",
-    pdfLabel: "ShatkariKarjMafi.pdf",
-  },
-  {
-    id: 3,
-    name: "राज्य ग्रामीण पेयजल योजना",
-    date: "२०२३-११-०१",
-    area: "ग्रामीण महाराष्ट्र",
-    benefit: "प्रत्येक घराला नळाने शुद्ध पाणी पुरविणे. ग्रामपंचायतीस अनुदान.",
-    howToApply: "ग्रामपंचायतीमार्फत जिल्हा जलजीवन मिशन कार्यालयात प्रस्ताव सादर करावा.",
-    website: "https://aaplesarkar.mahaonline.gov.in",
-    pdfFile: "PanchatPdf.pdf",
-    pdfLabel: "PanchatPdf.pdf",
-  },
-  {
-    id: 4,
     name: "मुख्यमंत्री सौर कृषी पंप योजना",
     date: "२०२४-०१-१०",
     area: "महाराष्ट्र राज्य",
@@ -495,8 +495,9 @@ const PS_DEPARTMENTS: DeptInfo[] = [
       "तालुक्यातील विकास कामांचे नियोजन व अंमलबजावणी.",
     ],
     contact: [
-      "गट विकास अधिकारी, पंचायत समिती संगमनेर",
+    "गट विकास अधिकारी (उ.श्रे.), पंचायत समिती संगमनेर",
       "सहायक गट विकास अधिकारी, पंचायत समिती संगमनेर",
+       "सहाय्यक प्रशासन अधिकारी ,पंचायत समिती संगमनेर",
     ],
     phone: "02425-272798",
   },
@@ -845,55 +846,55 @@ const DOC_CATEGORIES: DocCategory[] = [
     label: "नागरिकांची सनद",
     items: [
       {
-        title: "कृषी विभाग-जिल्हा परिषद पंचायत समिती संगमनेर",
+        title: "कृषी विभाग-जिल्हा समिती संगमनेर",
         pdfFile: "CitizenCharter_Krushi.pdf",
       },
       {
-        title: "जिल्हा परिषद पंचायत समिती संगमनेर-नागरिकांची सनद",
+        title: "पंचायत समिती संगमनेर-नागरिकांची सनद",
         pdfFile: "CitizenCharter_ZP.pdf",
       },
     ],
   },
-  {
-    label: "स्थायी समिती सभा इतिवृत्त",
-    items: [
-      {
-        title: "स्थायी समिती सभा इतिवृत्त",
-        date: "27/02/2026",
-        pdfFile: "SthaiyiSamiti_27022026.pdf",
-        size: "849 KB",
-      },
-      {
-        title: "स्थायी समिती सभा इतिवृत्त",
-        date: "30/01/2026",
-        pdfFile: "SthaiyiSamiti_30012026.pdf",
-        size: "3 MB",
-      },
-    ],
-  },
-  {
-    label: "सर्व साधारण सभा इतिवृत्त",
-    items: [
-      {
-        title: "सर्व साधारण सभा इतिवृत्त",
-        date: "10/02/2026",
-        pdfFile: "SarvSadharan_10022026.pdf",
-        size: "5 MB",
-      },
-      {
-        title: "सर्व साधारण सभा इतिवृत्त",
-        date: "08/01/2026",
-        pdfFile: "SarvSadharan_08012026.pdf",
-        size: "1 MB",
-      },
-      {
-        title: "सर्व साधारण सभा इतिवृत्त",
-        date: "01/12/2025",
-        pdfFile: "SarvSadharan_01122025.pdf",
-        size: "8 MB",
-      },
-    ],
-  },
+  // {
+  //   label: "स्थायी समिती सभा इतिवृत्त",
+  //   items: [
+  //     {
+  //       title: "स्थायी समिती सभा इतिवृत्त",
+  //       date: "27/02/2026",
+  //       pdfFile: "SthaiyiSamiti_27022026.pdf",
+  //       size: "849 KB",
+  //     },
+  //     {
+  //       title: "स्थायी समिती सभा इतिवृत्त",
+  //       date: "30/01/2026",
+  //       pdfFile: "SthaiyiSamiti_30012026.pdf",
+  //       size: "3 MB",
+  //     },
+  //   ],
+  // },
+  // {
+  //   label: "सर्व साधारण सभा इतिवृत्त",
+  //   items: [
+  //     {
+  //       title: "सर्व साधारण सभा इतिवृत्त",
+  //       date: "10/02/2026",
+  //       pdfFile: "SarvSadharan_10022026.pdf",
+  //       size: "5 MB",
+  //     },
+  //     {
+  //       title: "सर्व साधारण सभा इतिवृत्त",
+  //       date: "08/01/2026",
+  //       pdfFile: "SarvSadharan_08012026.pdf",
+  //       size: "1 MB",
+  //     },
+  //     {
+  //       title: "सर्व साधारण सभा इतिवृत्त",
+  //       date: "01/12/2025",
+  //       pdfFile: "SarvSadharan_01122025.pdf",
+  //       size: "8 MB",
+  //     },
+  //   ],
+  // },
 ];
 
 export const Documents = () => {

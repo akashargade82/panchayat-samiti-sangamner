@@ -76,13 +76,13 @@ const DEPARTMENTS: Department[] = [
     officers: [
       {
         name: "श्री. प्रविण अण्णासाहेब सिनारे",
-        designation: "गट विकास अधिकारी (उ.श्रे.), पंचायत समिती संगमनेर",
+        designation: "गट विकास अधिकारी (उ.श्रे.)",
         email: "bdosangamner@rediffmail.com",
         phone: "02425-272798",
       },
       {
         name: "श्री. राजेंद्र रविंद्रनाथ ठाकूर",
-        designation: "सहायक गट विकास अधिकारी, पंचायत समिती संगमनेर",
+        designation: "सहायक गट विकास अधिकारी",
         email: "bdosangamner@rediffmail.com",
         phone: "02425-272798",
       },
@@ -126,15 +126,15 @@ const DEPARTMENTS: Department[] = [
       {
         name: "श्री. वाळीबा नाथु उघडे ",
         designation: "कृषि अधिकारी (सामान्य)",
-        email: "ssasangamner@gmail.com",
+        email: "bdosangamner@rediffmail.com",
         phone: "02425-272798",
       },
       ,
       {
-        name: "बाळासाहेब हरीभाऊ गुंड",
-        designation: "गटशिक्षणाधिकारी पंचायत समिती संगमनेर",
+        name: "श्री. बाळासाहेब हरीभाऊ गुंड",
+        designation: "गटशिक्षणाधिकारी",
         email: "ssasangamner@gmail.com",
-        phone: "9420797533",
+        phone: "02425-272798",
       },
     ],
   },
@@ -183,9 +183,8 @@ const DeptTable: React.FC<{ dept: Department; defaultOpen?: boolean }> = ({
               {dept.officers.map((o, i) => (
                 <tr
                   key={i}
-                  className={`border-b border-gray-100 last:border-0 ${
-                    i % 2 === 0 ? 'bg-white' : 'bg-gray-50'
-                  } hover:bg-blue-50 transition-colors`}
+                  className={`border-b border-gray-100 last:border-0 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'
+                    } hover:bg-blue-50 transition-colors`}
                 >
                   <td className="p-3 text-gray-400 font-medium">{i + 1}</td>
                   <td className="p-3 font-semibold text-gray-800 whitespace-nowrap">{o.name}</td>

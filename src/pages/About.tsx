@@ -177,7 +177,7 @@ export const WhosWho = () => (
           <tr className="hover:bg-gray-50 transition whitespace-nowrap">
 
             <td className="border p-3 font-medium">
-              श्री प्रविण अण्णासाहेब सिनारे
+              श्री. प्रविण अण्णासाहेब सिनारे
             </td>
 
             <td className="border p-3 text-blue-600 break-all">

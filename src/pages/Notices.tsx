@@ -58,9 +58,9 @@ const NIVIDA_ITEMS: NoticeItem[] = [
 const NOTICE_TABS = [
   { label: "कार्यक्रम", items: KARYAKRAM_ITEMS },
   { label: "मागील कार्यक्रम", items: MAGIL_KARYAKRAM_ITEMS },
-  { label: "घोषणा (सामान्य)", items: GHOSHNA_ITEMS },
-  { label: "भरती", items: BHARTI_ITEMS },
-  { label: "निविदा", items: NIVIDA_ITEMS },
+  // { label: "घोषणा (सामान्य)", items: GHOSHNA_ITEMS },
+  // { label: "भरती", items: BHARTI_ITEMS },
+  // { label: "निविदा", items: NIVIDA_ITEMS },
 ];
 
 const NoticeTable = ({ items }: { items: NoticeItem[] }) => {
