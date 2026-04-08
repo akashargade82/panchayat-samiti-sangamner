@@ -143,7 +143,7 @@ const DEPARTMENTS: Department[] = [
       },
       {
         name: "श्री. राजेंद्र कासार",
-        designation: "(विस्तार अधिकारी) पंचायत तथा कक्ष प्रमुख स्वच्छ भारत मिशन",
+        designation: "विस्तार अधिकारी पंचायत तथा कक्ष प्रमुख(स्वच्छ भारत मिशन)",
         email: "ssasangamner@gmail.com",
         phone: "02425-272798",
       },
