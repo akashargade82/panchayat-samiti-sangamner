@@ -142,8 +142,8 @@ const DEPARTMENTS: Department[] = [
         phone: "02425-272798",
       },
       {
-        name: "श्री. भारत कासार",
-        designation: "विस्तार अधिकारी पंचायत(स्वच्छ भारत मिशन)",
+        name: "श्री. राजेंद्र कासार",
+        designation: "(विस्तार अधिकारी) पंचायत तथा कक्ष प्रमुख स्वच्छ भारत मिशन",
         email: "ssasangamner@gmail.com",
         phone: "02425-272798",
       },
@@ -166,8 +166,8 @@ const DEPARTMENTS: Department[] = [
         phone: "02425-272798",
       },
       {
-        name: "श्री. प्रदीप ढोके",
-        designation: "तालुका व्यवस्थापक(आपले सरकार)",
+        name: "श्री. प्रदीप बेळे",
+        designation: "तालुका व्यवस्थापक(राष्ट्रीय ग्राम स्वराज व आपले सरकार केंद्र)",
         email: "ssasangamner@gmail.com",
         phone: "02425-272798",
       }
@@ -222,7 +222,7 @@ const DeptTable: React.FC<{ dept: Department; defaultOpen?: boolean }> = ({
                     } hover:bg-blue-50 transition-colors`}
                 >
                   <td className="p-3 text-gray-400 font-medium">{i + 1}</td>
-                  <td className="p-3 font-semibold text-gray-800">{o.name}</td>
+                  <td className="p-3 font-semibold text-gray-800 whitespace-nowrap">{o.name}</td>
                   <td className="p-3 text-gray-700 leading-snug">{o.designation}</td>
                   <td className="p-3">
                     <a

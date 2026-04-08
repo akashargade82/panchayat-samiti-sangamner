@@ -7,6 +7,10 @@ import qr1 from '../images/qr1.png';
 import qr2 from '../images/qr2.png';
 import qr3 from '../images/qr3.png';
 import image from '../images/image.jpeg';
+import khandgoanImage from '../images/khangoan.jpeg';
+import rameshwer from '../images/rameshwer.png';
+import pemgiri from '../images/pemgiri.png';
+import marutitemple from '../images/marutitemple.png';
 
 interface GpInfoType {
   GPNAME?: string;
@@ -78,17 +82,17 @@ const bannerSlides = [
     subtitle: "तालुक्यातील सर्व गावांचे स्थान दर्शविणारा नकाशा",
   },
   {
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwepifp9GbqHRIZDE8N5eUEKVGxMi8w7uN02F5RYCuHZThQD6Z-cOtGJiS1kbDQsseiauBd0DzbnEtRI5OBxMucLq7PwLJ8sQuMry3aRytCh8YEgkO2e1w7k2CtovIIYuvf8zxHk4MA=w1920-h1440",
+    image: khandgoanImage,
     title: "खंडगाव, संगमनेर",
     subtitle: "निसर्गरम्य ग्रामीण परिसर",
   },
-  {
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweoU2AFPeHxP7GBdXX81WFwlBAE7xN8DR3yOIXUVeOb_maDLZtZFvC-r6vmkEAMQKw_WhEPFHkWLfF5kBFQBJE76SQzLOiKFBm8ank2zRtJdN7CaW7Ma-pEnnSedrErBj20mDahx=w1920-h1080",
-    title: "श्री रामेश्वर मंदिर, धांदरफळ",
-    subtitle: "प्राचीन धार्मिक वारसा",
+    {
+      image: rameshwer,
+      title: "श्री रामेश्वर मंदिर, धांदरफळ",
+      subtitle: "प्राचीन धार्मिक वारसा",
   },
   {
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqNXwvHyPQnRZGvQ5nhIcNNMG5wf-0gGxC8bgf_Hvan44J_EFzxH5Ntpyb7b33eecNbfzBlWhnQtI9gCxLBpL6zve1ZxI7VtrtdXN_gjHxJSpLHjLNyqIk3J6EenyzFN14mVLE=w1920-h1262",
+    image: marutitemple,
     title: "मारुती मंदिर, पेमगिरी",
     subtitle: "आस्था व श्रद्धेचे केंद्र",
   },

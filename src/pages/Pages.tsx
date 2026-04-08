@@ -19,99 +19,12 @@ interface Scheme {
 
 // ─── State Schemes Data ───────────────────────────────────────────────────────
 const STATE_SCHEMES: Scheme[] = [
-  {
-    id: 1,
-    name: "मुख्यमंत्री लाडकी बहीण योजना",
-    date: "२०२४-०२-०१",
-    area: "महाराष्ट्र राज्य",
-    benefit: "दरमहा ₹१५०० आर्थिक सहाय्य महिलांना थेट बँक खात्यात मिळते.",
-    howToApply: "जवळच्या ग्रामपंचायत / सेतू केंद्रात जाऊन अर्ज करावा किंवा आपले सरकार पोर्टलवर ऑनलाईन अर्ज करावा.",
-    website: "https://aaplesarkar.mahaonline.gov.in",
-    pdfFile: "LadkiBahin.pdf",
-    pdfLabel: "LadkiBahin.pdf",
-  },
-
-  // {
-  //   id: 2,
-  //   name: "महाराष्ट्र शेतकरी कर्जमाफी योजना",
-  //   date: "२०२३-१२-१५",
-  //   area: "महाराष्ट्र राज्य",
-  //   benefit: "शेतकऱ्यांचे ₹२ लाखांपर्यंतचे पीककर्ज माफ केले जाते.",
-  //   howToApply: "तालुका कृषी अधिकारी कार्यालयात अर्ज सादर करावा. आवश्यक कागदपत्रे: ७/१२ उतारा, बँक पासबुक.",
-  //   website: "https://aaplesarkar.mahaonline.gov.in",
-  //   pdfFile: "ShatkariKarjMafi.pdf",
-  //   pdfLabel: "ShatkariKarjMafi.pdf",
-  // },
-  // {
-  //   id: 3,
-  //   name: "राज्य ग्रामीण पेयजल योजना",
-  //   date: "२०२३-११-०१",
-  //   area: "ग्रामीण महाराष्ट्र",
-  //   benefit: "प्रत्येक घराला नळाने शुद्ध पाणी पुरविणे. ग्रामपंचायतीस अनुदान.",
-  //   howToApply: "ग्रामपंचायतीमार्फत जिल्हा जलजीवन मिशन कार्यालयात प्रस्ताव सादर करावा.",
-  //   website: "https://aaplesarkar.mahaonline.gov.in",
-  //   pdfFile: "PanchatPdf.pdf",
-  //   pdfLabel: "PanchatPdf.pdf",
-  // },
-  {
-    id: 2,
-    name: "मुख्यमंत्री सौर कृषी पंप योजना",
-    date: "२०२४-०१-१०",
-    area: "महाराष्ट्र राज्य",
-    benefit: "शेतकऱ्यांना अनुदानावर सौर कृषी पंप उपलब्ध करून देणे.",
-    howToApply: "महावितरण कार्यालय किंवा आपले सरकार पोर्टलवर अर्ज करावा.",
-    website: "https://aaplesarkar.mahaonline.gov.in",
-    pdfFile: "SolarPump.pdf",
-    pdfLabel: "SolarPump.pdf",
-  },
+  // Add schemes when PDFs are available
 ];
 
 // ─── Central Schemes Data ─────────────────────────────────────────────────────
 const CENTRAL_SCHEMES: Scheme[] = [
-  {
-    id: 1,
-    name: "प्रधानमंत्री आवास योजना (ग्रामीण)",
-    date: "२०२४-०१-१५",
-    area: "संपूर्ण भारत (ग्रामीण क्षेत्र)",
-    benefit: "पक्के घर बांधण्यासाठी ₹१,२०,००० अनुदान (डोंगराळ भागासाठी ₹१,३०,०००).",
-    howToApply: "ग्रामपंचायतीत नाव नोंदणी करावी. PMAY-G यादीत नाव असल्यास ग्रामसेवकाशी संपर्क साधावा.",
-    website: "https://pmayg.nic.in",
-    pdfFile: "samiti.pdf",
-    pdfLabel: "samiti.pdf",
-  },
-  {
-    id: 2,
-    name: "स्वच्छ भारत अभियान (ग्रामीण)",
-    date: "२०२३-१२-१०",
-    area: "संपूर्ण भारत",
-    benefit: "घरगुती शौचालय बांधकामासाठी ₹१२,००० अनुदान.",
-    howToApply: "ग्रामपंचायतीत अर्ज सादर करावा. ग्रामसेवकाशी संपर्क साधावा.",
-    website: "https://swachhbharatmission.gov.in",
-    pdfFile: "SwachhBharat.pdf",
-    pdfLabel: "SwachhBharat.pdf",
-  },
-  {
-    id: 3,
-    name: "प्रधानमंत्री किसान सन्मान निधी",
-    date: "२०२४-०२-२०",
-    area: "संपूर्ण भारत",
-    benefit: "शेतकऱ्यांना वर्षाला ₹६,००० (तीन हप्त्यात) थेट बँक खात्यात.",
-    howToApply: "PM-KISAN पोर्टलवर ऑनलाईन अर्ज करावा किंवा जवळच्या CSC केंद्रात जावे.",
-    website: "https://pmkisan.gov.in",
-    pdfFile: "PMKisan.pdf",
-    pdfLabel: "PMKisan.pdf",
-  },
-  // {
-  //   id: 4,
-  //   name: "मनरेगा (रोजगार हमी योजना)",
-  //   date: "२०२३-१०-०५",
-  //   area: "संपूर्ण भारत (ग्रामीण)",
-  //   benefit: "वर्षाला किमान १०० दिवस रोजगार हमी. रोजंदारी सरकार-निर्धारित दराने.",
-  //   howToApply: "ग्रामपंचायतीत जॉब कार्डसाठी अर्ज करावा.",
-  //   website: "https://nrega.nic.in",
-  //   pdfFile: "MNREGA.pdf",
-  //   pdfLabel: "MNREGA.pdf",
-  // },
+  // Add schemes when PDFs are available
 ];
 
 // ─── Detail Modal ─────────────────────────────────────────────────────────────
@@ -184,14 +97,23 @@ const SchemeDetailModal = ({
             </div>
           </div>
           <div className="border-t border-gray-100" />
-          <a
-            href={`/pdfs/${scheme.pdfFile}`}
-            download={scheme.pdfFile}
-            className="flex items-center justify-center gap-2 w-full py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-xl font-bold transition-colors text-sm"
-          >
-            <Download size={18} />
-            PDF डाउनलोड करा — {scheme.pdfLabel}
-          </a>
+          <div className="flex items-center gap-3">
+            <a
+              href={`/pdfs/${scheme.pdfFile}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 inline-flex items-center justify-center gap-1.5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-bold transition-colors"
+            >
+              <Eye size={16} /> PDF पहा
+            </a>
+            <a
+              href={`/pdfs/${scheme.pdfFile}`}
+              download={scheme.pdfLabel ?? scheme.pdfFile}
+              className="flex-1 inline-flex items-center justify-center gap-1.5 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg text-sm font-bold transition-colors"
+            >
+              <Download size={16} /> PDF डाउनलोड करा
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -270,6 +192,8 @@ interface DeptInfo {
   points: string[];
   contact?: string[];
   phone?: string;
+  pdfFile?: string;
+  pdfLabel?: string;
 }
 
 const ZP_DEPARTMENTS: DeptInfo[] = [
@@ -504,6 +428,103 @@ const PS_DEPARTMENTS: DeptInfo[] = [
     ],
     phone: "02425-272798",
   },
+  {
+    name: "एकात्मिक बाल विकास सेवा विभाग",
+    title: "रचना व कार्यपध्दती",
+    points: [
+      "अंगणवाडी सेवांचे नियोजन व संनियंत्रण.",
+      "बाल विकास प्रकल्प अधिकाऱ्यांचे नियंत्रण.",
+      "पोषण अभियान अंतर्गत कुपोषण निर्मूलन कार्यक्रम.",
+      "महिलांसाठी विविध शासकीय योजनांची अंमलबजावणी.",
+      "बालसंगोपन, प्रि-स्कूल शिक्षण व आरोग्य तपासणी.",
+    ],
+    pdfFile: "एकात्मिक बाल विकास सेवा विभाग.pdf",
+    pdfLabel: "एकात्मिक बाल विकास सेवा विभाग.pdf",
+  },
+  {
+    name: "ग्रामीण पाणी पुरवठा उपविभाग",
+    title: "रचना व कार्यपध्दती",
+    points: [
+      "ग्रामीण पाणी पुरवठा योजनांचे नियोजन, अंमलबजावणी व देखभाल.",
+      "जल जीवन मिशन अंतर्गत नळजोडणी कार्यक्रम.",
+      "पाणी गुणवत्ता तपासणी व देखरेख.",
+      "हातपंप दुरुस्ती व देखभाल.",
+    ],
+    pdfFile: "ग्रामीण पाणी पुरवठा उपविभाग.pdf",
+    pdfLabel: "ग्रामीण पाणी पुरवठा उपविभाग.pdf",
+  },
+  {
+    name: "बांधकाम विभाग",
+    title: "रचना व कार्यपध्दती",
+    points: [
+      "रस्ते, पूल, इमारती यांचे बांधकाम व देखभाल.",
+      "ग्रामीण रस्ते विकास कार्यक्रम (PMGSY) अंमलबजावणी.",
+      "शासकीय इमारतींची देखभाल व दुरुस्ती.",
+      "निविदा प्रक्रिया व कामांचे तांत्रिक परीक्षण.",
+    ],
+    pdfFile: "बांधकाम विभाग.pdf",
+    pdfLabel: "बांधकाम विभाग.pdf",
+  },
+  {
+    name: "पशुसंवर्धन विभाग",
+    title: "रचना व कार्यपध्दती",
+    points: [
+      "जनावरांचे लसीकरण, आजार नियंत्रण व उपचार.",
+      "पशुधन विकास अधिकारी यांचे नियंत्रण.",
+      "दूध उत्पादन वाढीसाठी संकरित गोपालन, शेळी-मेंढी पालन योजना.",
+      "कुक्कुटपालन, मत्स्यपालन विकास कार्यक्रम.",
+    ],
+    pdfFile: "पशुसंवर्धन विभाग.pdf",
+    pdfLabel: "पशुसंवर्धन विभाग.pdf",
+  },
+  {
+    name: "तालुका आरोग्य विभाग",
+    title: "रचना व कार्यपध्दती",
+    points: [
+      "प्राथमिक आरोग्य केंद्रे व उपकेंद्रांचे नियंत्रण.",
+      "माता व बाल आरोग्य सेवा, लसीकरण कार्यक्रम.",
+      "साथरोग नियंत्रण, आरोग्य तपासणी शिबिरे.",
+      "आरोग्य कर्मचाऱ्यांचे आस्थापनाविषयक कामकाज.",
+    ],
+    pdfFile: "तालुका आरोग्य विभाग पंचाय समिती संगमनेर कार्यरत कर्मचारी माहिती.pdf",
+    pdfLabel: "तालुका आरोग्य विभाग कर्मचारी माहिती.pdf",
+  },
+  {
+    name: "शिक्षण विभाग",
+    title: "रचना व कार्यपध्दती",
+    points: [
+      "जिल्हा परिषद प्राथमिक व माध्यमिक शाळांचे प्रशासन.",
+      "शिक्षक नियुक्ती, बदली, पदोन्नती व आस्थापनाविषयक बाबी.",
+      "मध्यान्ह भोजन योजना (MDM) व्यवस्थापन.",
+      "शैक्षणिक साहित्य, गणवेश, पाठ्यपुस्तक वितरण.",
+    ],
+    pdfFile: "शिक्षण.pdf",
+    pdfLabel: "शिक्षण.pdf",
+  },
+  {
+    name: "ग्रामपंचायत विभाग",
+    title: "रचना व कार्यपध्दती",
+    points: [
+      "ग्रामपंचायतींवर पर्यवेक्षण व संनियंत्रण.",
+      "ग्रामसेवक, ग्राम विकास अधिकारी यांचे प्रशासकीय कामे.",
+      "ग्रामपंचायतींना अनुदान वाटप.",
+      "लोकनियुक्त प्रतिनिधींना प्रशिक्षण.",
+    ],
+    pdfFile: "ग्रामपंचायत विभाग.pdf",
+    pdfLabel: "ग्रामपंचायत विभाग.pdf",
+  },
+  {
+    name: "लघुपाटबंधारे विभाग",
+    title: "रचना व कार्यपध्दती",
+    points: [
+      "लघु पाटबंधारे तलाव, बंधारे यांची देखभाल व दुरुस्ती.",
+      "सिंचन सुविधा विकास.",
+      "जलसंधारण व मृद संधारण कामे.",
+      "उप विभागीय जलसंधारण अधिकाऱ्यांचे नियंत्रण.",
+    ],
+    pdfFile: "लघुपाठबंधारे विभाग.pdf",
+    pdfLabel: "लघुपाठबंधारे विभाग.pdf",
+  },
 ];
 
 const DeptAccordion: React.FC<{ dept: DeptInfo; defaultOpen?: boolean }> = ({
@@ -549,6 +570,28 @@ const DeptAccordion: React.FC<{ dept: DeptInfo; defaultOpen?: boolean }> = ({
               {dept.phone && (
                 <p className="text-sm text-blue-700 font-semibold mt-2">📞 {dept.phone}</p>
               )}
+            </div>
+          )}
+          {dept.pdfFile && (
+            <div className="mt-4 pt-4 border-t border-gray-100 flex items-center gap-3">
+
+              <a
+                href={`/pdfs/${dept.pdfFile}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs font-bold transition-colors"
+              >
+                <Eye size={14} /> PDF पहा
+              </a>
+
+              <a
+                href={`/pdfs/${dept.pdfFile}`}
+                download={dept.pdfLabel ?? dept.pdfFile}
+                className="inline-flex items-center gap-1.5 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg text-xs font-bold transition-colors"
+              >
+                <Download size={14} /> PDF डाउनलोड करा
+              </a>
+
             </div>
           )}
         </div>
@@ -599,22 +642,7 @@ interface RtsItem { title: string; pdfFile: string; }
 interface RtsCategory { label: string; items: RtsItem[]; }
 
 const RTS_CATEGORIES: RtsCategory[] = [
-  {
-    label: "सार्वजनिक सेवेचा अधिकार",
-    items: [{ title: "अधिसूचित सेवा १ ते ७", pdfFile: "RTS_1to7.pdf" }],
-  },
-  {
-    label: "महिला आणि बालकल्याण",
-    items: [{ title: "महिला आणि बालकल्याण सेवा", pdfFile: "RTS_WomenChild.pdf" }],
-  },
-  {
-    label: "शालेय शिक्षण आणि क्रीडा",
-    items: [{ title: "शालेय शिक्षण आणि क्रीडा सेवा", pdfFile: "RTS_SchoolSports.pdf" }],
-  },
-  {
-    label: "प्राथमिक शिक्षण",
-    items: [{ title: "प्राथमिक शिक्षण सेवा", pdfFile: "RTS_PrimaryEdu.pdf" }],
-  },
+  // Add categories when PDFs are available
 ];
 
 const RtsSection = () => {
@@ -627,8 +655,8 @@ const RtsSection = () => {
             key={idx}
             onClick={() => setActiveTab(idx)}
             className={`px-4 py-2 rounded-full text-sm font-bold border transition-all ${activeTab === idx
-                ? 'bg-blue-900 text-white border-blue-900'
-                : 'bg-white text-gray-600 border-gray-300 hover:border-blue-900 hover:text-blue-900'
+              ? 'bg-blue-900 text-white border-blue-900'
+              : 'bg-white text-gray-600 border-gray-300 hover:border-blue-900 hover:text-blue-900'
               }`}
           >
             {cat.label}
@@ -724,16 +752,7 @@ const GrievanceSection = () => (
 interface FormItem { title: string; pdfFile: string; size?: string; }
 
 const FORMS: FormItem[] = [
-  {
-    title: "अनुकंपा तत्वावर नियुक्ती संदिभंत संवर्ग-3 व संवर्ग-4 साठीची तात्पुरती प्रतीक्षा सूची (माही डिसेंबर 2024 अखेर)",
-    pdfFile: "AnukampaList.pdf",
-    size: "2 MB",
-  },
-  {
-    title: "अनुकंपा तत्वावर नियुक्तीसाठी आवश्यक असलेले सर्व प्रतिज्ञापत्र",
-    pdfFile: "AnukampaAffidavit.pdf",
-    size: "127 KB",
-  },
+  // Add forms when PDFs are available
 ];
 
 const FormsSection = () => (
@@ -819,36 +838,7 @@ interface DocCategory {
 }
 
 const DOC_CATEGORIES: DocCategory[] = [
-  // {
-  //   label: "अंदाजपत्रक",
-  //   items: [
-  //     {
-  //       title: "जिल्हा परिषद पंचायत समिती संगमनेर अंदाजपत्रक 2025-26",
-  //       pdfFile: "Budget_2025_26.pdf",
-  //       size: "743 KB",
-  //     },
-  //     {
-  //       title: "जिल्हा परिषद स्व:उत्पन्नाचे सन 2025-26 चे मूळ व अंतिम अंदाजपत्रक, तसेच सन 2026-27 चे मूळ अंदाजपत्रक",
-  //       pdfFile: "Budget_2026_27.pdf",
-  //       size: "897 KB",
-  //     },
-  //   ],
-  // },
-  {
-    label: "परिपत्रके / सूचना",
-    items: [
-      {
-        title: "खाते प्रमुख व विकास अधिकारी यांना प्रदान केलेले अधिकार (सन 2016 ते सन 2020 पर्यंत सुधारित)",
-        pdfFile: "Adhikar_2016_2020.pdf",
-        size: "6 MB",
-      },
-      {
-        title: "कुंभी नोंद ",
-        pdfFile: "Kumbhi_Nonan.pdf",
-        size: "2 MB",
-      }
-    ],
-  },
+  // Add categories when PDFs are available
   // {
   //   label: "नागरिकांची सनद",
   //   items: [
@@ -906,7 +896,7 @@ const DOC_CATEGORIES: DocCategory[] = [
 
 export const Documents = () => {
   const [activeTab, setActiveTab] = useState(0);
-  const active = DOC_CATEGORIES[activeTab];
+  const active = DOC_CATEGORIES[activeTab] || { items: [] };
 
   return (
     <ContentPage title="कागदपत्रे">
@@ -916,54 +906,60 @@ export const Documents = () => {
             key={idx}
             onClick={() => setActiveTab(idx)}
             className={`px-4 py-2 rounded-full text-sm font-bold border transition-all ${activeTab === idx
-                ? 'bg-blue-900 text-white border-blue-900'
-                : 'bg-white text-gray-600 border-gray-300 hover:border-blue-900 hover:text-blue-900'
+              ? 'bg-blue-900 text-white border-blue-900'
+              : 'bg-white text-gray-600 border-gray-300 hover:border-blue-900 hover:text-blue-900'
               }`}
           >
             {cat.label}
           </button>
         ))}
       </div>
-      <div className="rounded-xl border border-gray-200 shadow-sm overflow-hidden">
-        <div className="grid grid-cols-[1fr_auto_auto] px-4 py-3 bg-blue-900 text-white">
-          <span className="text-sm font-bold">शीर्षक</span>
-          <span className="text-sm font-bold px-6">तारीख</span>
-          <span className="text-sm font-bold text-center">पहा / डाउनलोड करा</span>
+      {DOC_CATEGORIES.length === 0 ? (
+        <div className="text-center py-12 text-gray-400 text-sm font-medium border border-gray-200 rounded-xl bg-gray-50">
+          कोणतीही कागदपत्रे उपलब्ध नाही.
         </div>
-        {active.items.map((item, i) => (
-          <div
-            key={i}
-            className={`grid grid-cols-[1fr_auto_auto] px-4 py-3 items-center border-b border-gray-100 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'
-              } hover:bg-blue-50 transition-colors`}
-          >
-            <div>
-              <p className="text-sm text-gray-800">{item.title}</p>
-              <p className="text-xs text-gray-400 mt-0.5">प्रवेशयोग्य आवृत्ती</p>
-            </div>
-            <span className="text-sm text-gray-600 px-6 whitespace-nowrap">
-              {item.date ?? '—'}
-            </span>
-            <div className="flex items-center gap-3">
-              <a
-                href={`/pdfs/${item.pdfFile}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline text-sm font-medium flex items-center gap-1 whitespace-nowrap"
-              >
-                पहा{item.size ? ` (${item.size})` : ''} <Eye size={14} />
-              </a>
-              <a
-                href={`/pdfs/${item.pdfFile}`}
-                download={item.pdfFile}
-                className="text-blue-600 hover:text-blue-800"
-                title="डाउनलोड करा"
-              >
-                <Download size={16} />
-              </a>
-            </div>
+      ) : (
+        <div className="rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+          <div className="grid grid-cols-[1fr_auto_auto] px-4 py-3 bg-blue-900 text-white">
+            <span className="text-sm font-bold">शीर्षक</span>
+            <span className="text-sm font-bold px-6">तारीख</span>
+            <span className="text-sm font-bold text-center">पहा / डाउनलोड करा</span>
           </div>
-        ))}
-      </div>
+          {active.items.map((item, i) => (
+            <div
+              key={i}
+              className={`grid grid-cols-[1fr_auto_auto] px-4 py-3 items-center border-b border-gray-100 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'
+                } hover:bg-blue-50 transition-colors`}
+            >
+              <div>
+                <p className="text-sm text-gray-800">{item.title}</p>
+                <p className="text-xs text-gray-400 mt-0.5">प्रवेशयोग्य आवृत्ती</p>
+              </div>
+              <span className="text-sm text-gray-600 px-6 whitespace-nowrap">
+                {item.date ?? '—'}
+              </span>
+              <div className="flex items-center gap-3">
+                <a
+                  href={`/pdfs/${item.pdfFile}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline text-sm font-medium flex items-center gap-1 whitespace-nowrap"
+                >
+                  पहा{item.size ? ` (${item.size})` : ''} <Eye size={14} />
+                </a>
+                <a
+                  href={`/pdfs/${item.pdfFile}`}
+                  download={item.pdfFile}
+                  className="text-blue-600 hover:text-blue-800"
+                  title="डाउनलोड करा"
+                >
+                  <Download size={16} />
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
     </ContentPage>
   );
 };
@@ -1134,3 +1130,68 @@ const HelpSectionContent = () => {
     </div>
   );
 };
+
+// ─── Website Policies ─────────────────────────────────────────────────────────
+
+interface PolicySection {
+  title: string;
+  content: string;
+}
+
+const POLICY_SECTIONS: PolicySection[] = [
+  {
+    title: "वापरण्याच्या अटी",
+    content: "संकेतस्थळावरील माहितीचे प्रकाशन व व्यवस्थापन जिल्हा परिषद अहिल्यानगर यांच्या मार्फत केले जाते. संकेतस्थळावरील मजकुराच्या सत्यतेबाबत सर्वतोपरी खबरदारी घेतली गेली असली, तरी हा मजकूर कोणत्याही कायदेशीर कारणासाठी पुरावा म्हणून वापरता येणार नाही. या संकेतस्थळाचा वापर करीत असताना कोणत्याही प्रकारचा खर्च, तोटा, दुष्पपरिणाम अथवा हानी झाल्यास त्यासाठी जिल्हा परिषद अहिल्यानगर जिल्हा प्रशासन व राष्ट्रीय सूचना विज्ञान केंद्र, जिल्हा परिषद अहिल्यानगर जबाबदार राहणार नाही. या संकेतस्थळावर समाविष्ट असलेल्या इतर संकेतस्थळाच्या लिंक्स फक्त नागरिकांच्या सोयीसाठी दिल्या आहेत. आम्ही नेहमी अशा लिंक केलेल्या पृष्ठांच्या उपलब्धतेची हमी देत नाही. भारतीय कायद्यानुसार या अटी आणि नियमांचे नियंत्रण केले जाईल. या अटी आणि नियमासंदर्भातील कोणत्याही प्रकारचा वाद जिल्हा न्यायालय अहिल्यानगर क्षेत्रात राहील।"
+  },
+  {
+    title: "कॉपीराइट धोरण",
+    content: "या संकेत स्थळावरील माहिती आम्हाला एक मेल पाठवून योग्य परवानगी घेतल्यानंतर विनामूल्य पुन: प्रस्तुत केली जाऊ शकते. तथापि, संकेत स्थळावरील माहिती अचूकपणे पुन: प्रस्तुत करणे आवश्यक आहे आणि अप्रतिष्ठाकारक पद्धतीने अथवा दिशाभूल करण्याच्या संदर्भात वापरता येणार नाही. जेव्हा या माहितीचे किवा सामग्रीचे प्रकाशन किवा वापर कराल त्या वेळेस स्रोत प्रामुख्याने अभिस्वीकृत केला गेला पाहिजे. तथापि ह्या संकेत स्थळावरील माहितीचे पुन: प्रस्तुत करण्याची अनुमती त्रयस्थ पक्षाच्या सर्वाधिकार (कॉपीराइट) माहिती पर्यत विस्तारीत करू शकत नाही, अशा प्रकारच्या माहितीचे पुनरुत्पादित करण्यासाठी संबंधित विभाग / सर्वाधिकार (कॉपीराइट) धारकांकडून परवानगी प्राप्त करणे आवश्यक आहे।"
+  },
+  {
+    title: "गोपनीयता धोरण",
+    content: "हे संकेतस्थळ तुमची व्यक्तिगत ओळख स्पष्ट करणारी कोणत्याही प्रकारची माहिती (जसे नाव, दूरध्वनी क्र. अथवा ई-मेल) स्वयंचलितरित्या आपल्याकडे ठेवत नाही. जर हे संकेतस्थळद्वारा आपल्याला वैयक्तिक माहिती देण्याची विनंती केली असेल, तर आपल्याला अशी माहिती का घेतली जाते आहे त्याचा उद्देश स्प्ष्ट दिला जाईल उदा. प्रतिक्रिया अर्ज. आणि आपली वैयक्तिक माहिती संरक्षित करण्यासाठी पर्याप्त सुरक्षिततेच्या उपाययोजना घेतल्या जातील. आम्ही ह्या संकेतस्थळावरील कोणत्याही वैयक्तिकरित्या ओळखण्यायोग्य माहितीची विक्री कोणत्याही तृतीय पक्ष (सार्वजनिक / खाजगी) करीत नाही किंवा सामायिक करीत नाही. या संकेतस्थळावर प्रदान केलेली कोणतीही माहिती नुकसान, गैरवापर, अनधिकृत प्रवेश किंवा प्रकटीकरण, फेरबदल किंवा विनाश यापासून संरक्षित केली जाईल. आम्ही भेटी दिलेल्या पृष्ठांबद्दल विशिष्ट माहिती गोळा करतो जसे इंटरनेट प्रोटोकॉल, आय. पी. एड्रेस, डोमेन नेम, ब्राउजर प्रकार, ऑपरेटिंग सिस्टम, भेटीची तारीख आणि वेळ, भेटी दिलेल्या पृष्ठ इ. या संकेत स्थळाच्या सुरक्षेला बाधा पोहोचवण्याचा प्रयत्न झाल्यास त्याचा मागोवा घेण्यासाठी आम्हांला या माहितीचा उपयोग होतो।"
+  },
+  {
+    title: "हायपर लिंकिंग धोरण",
+    content: "या संकेतस्थळावर अनेक ठिकाणी आपल्याला इतर संकेतस्थळाचे / पोर्टल्सचे दुवे सापडतील. हे दुवे आपल्या सोयीसाठी ठेवण्यात आले आहेत. आम्ही हमी देऊ शकत नाही की हे लिंक्स सर्व वेळ काम करतील आणि जोडलेल्या पृष्ठांची उपलब्धता यावर आमचे कोणतेही नियंत्रण नाही।"
+  },
+  {
+    title: "आर्किव्हल धोरण",
+    content: "जिल्हा परिषद अहिल्यानगर च्या संकेतस्थळावर प्रकाशित करण्यात येणारी माहिती ही जिल्हा परिषद अहिल्यानगर विभागाची सामान्य व स्थायी स्वरूपाची असून, प्रकाशित झालेल्या माहितीसाठी कोणताही कालबद्ध मर्यादा ठरवलेली नसते. त्यामुळे ही माहिती सतत संकेतस्थळावर उपलब्ध राहते. मात्र, 'कार्यक्रम', 'निविदा', 'भरती' आणि 'जाहिराती' या विभागांत प्रसिद्ध होणारी सामग्री ही कालबद्ध स्वरूपाची असते. प्रत्येक पर्यायासाठी निश्चित समाप्ती दिनांक दिलेला असतो, आणि त्या दिनांकानंतर संबंधित सामग्री आपोआप ऑनलाईन संग्रहित भागात जाते।"
+  }
+];
+
+const PolicyAccordion: React.FC<{ policy: PolicySection; defaultOpen?: boolean }> = ({
+  policy,
+  defaultOpen = false,
+}) => {
+  const [open, setOpen] = useState(defaultOpen);
+  return (
+    <div className="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+      <button
+        onClick={() => setOpen(v => !v)}
+        className="w-full flex items-center justify-between px-5 py-3 bg-white hover:bg-gray-50 border-b border-gray-100 transition-colors text-left"
+      >
+        <span className="font-bold text-sm text-gray-800">{policy.title}</span>
+        {open
+          ? <ChevronRight size={18} className="text-gray-400 rotate-90 transition-transform" />
+          : <ChevronRight size={18} className="text-gray-400 transition-transform" />}
+      </button>
+      {open && (
+        <div className="p-6 bg-white">
+          <p className="text-sm text-gray-700 leading-relaxed">{policy.content}</p>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export const WebsitePolicies = () => (
+  <ContentPage title="वेबसाइट धोरणे">
+    <div className="space-y-3">
+      {POLICY_SECTIONS.map((policy, idx) => (
+        <PolicyAccordion key={policy.title} policy={policy} defaultOpen={idx === 0} />
+      ))}
+    </div>
+  </ContentPage>
+);

@@ -112,7 +112,7 @@ export const Header = () => {
             {/* <img src={logo} alt="Swachh Bharat" className="h-14 mt-3" />     */}
             <div className="border-l border-gray-200 pl-3">
               <p className="text-[11px] md:text-[13px] text-orange-gov font-bold uppercase tracking-wider">महाराष्ट्र शासन,</p>
-               <p className="text-[11px] md:text-[13px] text-orange-gov font-bold uppercase tracking-wider">ग्रामविकास विभाग,</p>
+               <p className="text-[11px] md:text-[13px] text-orange-gov font-bold uppercase tracking-wider">ग्रामविकास व पंचायत राज विभाग,</p>
               <p className="text-[11px] md:text-[13px] text-orange-gov font-bold uppercase tracking-wider">जिल्हा परिषद अहिल्यानगर,</p>
               <h1 className="text-xl md:text-2xl font-bold text-blue-gov leading-tight">पंचायत समिती संगमनेर</h1>
             </div>
@@ -208,7 +208,7 @@ export const Footer = () => {
   const footerLinks = [
     { name: 'अभिप्राय', path: '/#' },
     { name: 'सूचना', path: '/notices' },
-    { name: 'वेबसाइट धोरणे', path: '#' },
+    { name: 'वेबसाइट धोरणे', path: '/website-policies' },
     { name: 'आमच्याशी संपर्क साधा', path: '/admin-depts/ps' },
     // { name: 'मदत', path: '/help' },
     { name: 'वेब माहिती व्यवस्थापक', path: '/web-info-manager' },

@@ -23,7 +23,8 @@ import {
   Notices,
   Media,
   WebInfoManager,
-  HelpSection
+  HelpSection,
+  WebsitePolicies
 } from './pages/Pages';
 
 export default function App() {
@@ -66,6 +67,9 @@ export default function App() {
             {/* Web Info Manager */}
             <Route path="/web-info-manager" element={<WebInfoManager />} />
             <Route path="/help" element={<HelpSection />} />
+
+            {/* Website Policies */}
+            <Route path="/website-policies" element={<WebsitePolicies />} />
 
             {/* Notices */}
             <Route path="/notices" element={<Notices />} />
