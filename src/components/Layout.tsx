@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, Phone, Mail, Facebook, Search } from 'lucide-react';
 import { cn } from '@/src/lib/utils';
 import logo from '../images/logo.jpeg';
-
+import opi from '../images/OIP.png';
 const navItems = [
   { name: 'मुख्यपृष्ठ', path: '/' },
   {
@@ -106,7 +106,7 @@ export const Header = () => {
         <div className="cover mx-auto px-4 py-3">
           <Link to="/" className="flex gap-3">
                
-            <img src="https://nagarzp.gov.in/wp-content/themes/sdo-theme/images/emblem.png" alt="Emblem" className="h-15 mt-3" />
+            <img src={opi} alt="Emblem" className="h-15 mt-3" />
             <img src="https://cdnbbsr.s3waas.gov.in/s385b75d04f478d3841e38eb64aefdb05a/uploads/2025/04/20250415379430117.png" alt="Digital India" className="h-13 mt-3" />
             <img src="https://cdnbbsr.s3waas.gov.in/s385b75d04f478d3841e38eb64aefdb05a/uploads/2025/04/202504111579669448.png" alt="Swachh Bharat" className="h-13 mt-3" />  
             {/* <img src={logo} alt="Swachh Bharat" className="h-14 mt-3" />     */}

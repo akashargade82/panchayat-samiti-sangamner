@@ -9,7 +9,7 @@ import qr3 from '../images/qr3.png';
 import image from '../images/image.jpeg';
 import khandgoanImage from '../images/khangoan.jpeg';
 import rameshwer from '../images/rameshwer.png';
-import pemgiri from '../images/pemgiri.png';
+
 import marutitemple from '../images/marutitemple.png';
 
 interface GpInfoType {
@@ -29,7 +29,7 @@ export const notices = [
     id: 1,
     date: "१५",
     month: "मार्च",
-    title: "ग्रामपंचायत निवडणूक २०२४ - मतदार यादी प्रसिद्धीबाबत.",
+    title: "शासनाच्या ३० विभागांची अधिसूचित सेवांची माहिती मिळवण्यासाठी",
     published: "१५ मार्च २०२४",
     category: "घोषणा",
     pdf: "/pdfs/notice1.pdf",
@@ -39,7 +39,7 @@ export const notices = [
     id: 1,
     date: "१५",
     month: "मार्च",
-    title: "ग्रामपंचायत निवडणूक २०२४ - मतदार यादी प्रसिद्धीबाबत.",
+    title: "आपली तक्रार नोंदविण्यासाठी खालील QR कोड स्कॅन करा",
     published: "१५ मार्च २०२४",
     category: "घोषणा",
     pdf: "/pdfs/notice1.pdf",
@@ -49,7 +49,7 @@ export const notices = [
     id: 1,
     date: "१५",
     month: "मार्च",
-    title: "ग्रामपंचायत निवडणूक २०२४ - मतदार यादी प्रसिद्धीबाबत.",
+    title: "दाखला मागणी करण्यासाठी खालील QR कोड स्कॅन करा",
     published: "१५ मार्च २०२४",
     category: "घोषणा",
     pdf: "/pdfs/notice1.pdf",
@@ -244,12 +244,12 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
                     <img
                       src={item.image}
                       // alt={item.title}
-                      className="w-[25pc] h-[18pc] object-cover rounded-xl mb-3 border border-gray-200"
+                      className="w-[25pc] h-[18pc] object-contain rounded-xl mb-3 border border-gray-200 shadow-lg"
                     />
                   )}
-                  {/* <h4 className="text-[14px] font-bold text-gray-800 group-hover:text-blue-gov">
+                  <h4 className="text-[12px] font-bold text-center text-gray-800 group-hover:text-blue-gov">
                           {item.title}
-                        </h4> */}
+                        </h4>
                   {/* <p className="text-[11px] text-gray-500 mt-1 font-bold">
                           प्रकाशित दिनांक: {item.published} | श्रेणी: {item.category}
                         </p> */}
