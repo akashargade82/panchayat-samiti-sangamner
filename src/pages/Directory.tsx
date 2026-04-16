@@ -137,7 +137,7 @@ const DEPARTMENTS: Department[] = [
       },
       {
         name: "श्रीमती. भाग्यश्री नरहरी शेळके",
-        designation: "विस्तार अधिकारी सांखेकी(घरकुल)",
+        designation: "विस्तार अधिकारी सांख्यिकी तथा कक्ष प्रमुख घरकुल विभाग",
         email: "ssasangamner@gmail.com",
         phone: "02425-272798",
       },

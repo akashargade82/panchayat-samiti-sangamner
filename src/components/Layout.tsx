@@ -206,7 +206,7 @@ export const Header = () => {
 
 export const Footer = () => {
   const footerLinks = [
-    { name: 'अभिप्राय', path: '/#' },
+    // { name: 'अभिप्राय', path: '/#' },
     { name: 'सूचना', path: '/notices' },
     { name: 'वेबसाइट धोरणे', path: '/website-policies' },
     { name: 'आमच्याशी संपर्क साधा', path: '/admin-depts/ps' },

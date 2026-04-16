@@ -90,26 +90,63 @@ const RtsSection = () => {
 
 const ServicesSection = () => (
   <ContentPage title="नागरी सुविधा केंद्र">
-    <div className="rounded-xl border border-gray-200 shadow-sm overflow-hidden">
-      <div className="bg-gray-800 text-white px-4 py-3 font-bold text-sm">नागरी सुविधा केंद्र</div>
-      <div className="bg-white px-4 py-4">
-        <p className="text-sm text-gray-700 leading-relaxed">
-          कॉमन सर्व्हिस सेंटर (सीएससी) हे ग्रामीण भागात असलेले सेवा केंद्र आहेत. या केंद्रांमधून
-          नागरिकांना विविध सरकारी सेवा उपलब्ध होतात. जसे की आधार कार्ड बनवणे, बँक खाते उघडणे,
-          विमा काढणे, बिल भरणे, पासपोर्ट, पॅनकार्ड बनवणे आणि इतर अनेक सेवा. या केंद्रांमुळे
-          ग्रामीण भागातील नागरिकांना सरकारी सेवा सहज उपलब्ध होतात आणि त्यांचे जीवन सुलभ होते.
-        </p>
-        <a
-          href="https://digitalseva.csc.gov.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 mt-3 text-sm text-blue-600 hover:underline font-semibold"
-        >
-          भेट : https://digitalseva.csc.gov.in/ <ExternalLink size={13} />
-        </a>
-      </div>
+  <div className="rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+    
+    <div className="bg-gray-800 text-white px-4 py-3 font-bold text-sm">
+      नागरी सुविधा केंद्र
     </div>
-  </ContentPage>
+
+    <div className="bg-white px-4 py-4">
+      
+      <p className="text-sm text-gray-700 leading-relaxed">
+        कॉमन सर्व्हिस सेंटर (सीएससी) हे ग्रामीण भागात असलेले सेवा केंद्र आहेत. या केंद्रांमधून
+        नागरिकांना विविध सरकारी सेवा उपलब्ध होतात. जसे की आधार कार्ड बनवणे, बँक खाते उघडणे,
+        विमा काढणे, बिल भरणे, पासपोर्ट, पॅनकार्ड बनवणे आणि इतर अनेक सेवा. या केंद्रांमुळे
+        ग्रामीण भागातील नागरिकांना सरकारी सेवा सहज उपलब्ध होतात आणि त्यांचे जीवन सुलभ होते.
+      </p>
+
+      <a
+        href="https://digitalseva.csc.gov.in/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-1 mt-3 text-sm text-blue-600 hover:underline font-semibold"
+      >
+        भेट : https://digitalseva.csc.gov.in/ <ExternalLink size={13} />
+      </a>
+
+      {/* ✅ RTI Section (same card me integrated) */}
+      <div className="mt-5 pt-4 border-t border-gray-100">
+        <p className="text-sm font-semibold text-gray-800 mb-1">
+          माहितीचा अधिकार अधिनियम २००५
+        </p>
+        <p className="text-xs text-gray-600 mb-3">
+          कलम ४ अन्वये १ ते १७ बाबींची माहिती खालील PDF मध्ये उपलब्ध आहे.
+        </p>
+
+        {/* ✅ PDF Buttons */}
+        <div className="flex items-center gap-3">
+          <a
+            href="/pdfs/RTI.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs font-bold transition-colors"
+          >
+            <Eye size={14} /> PDF पहा
+          </a>
+
+          <a
+            href="/pdfs/RTI.pdf"
+            download="RTI.pdf"
+            className="inline-flex items-center gap-1.5 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg text-xs font-bold transition-colors"
+          >
+            <Download size={14} /> PDF डाउनलोड करा
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</ContentPage>
 );
 
 // ─── Grievance (तक्रार निवारण) ───────────────────────────────────────────────

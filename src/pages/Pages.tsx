@@ -20,7 +20,7 @@ interface Scheme {
 // ─── State Schemes Data ───────────────────────────────────────────────────────
 const STATE_SCHEMES: Scheme[] = [
   {
-   id: 1,
+    id: 1,
     name: "मुख्यमंत्री लाडकी बहीण योजना",
     date: "२०२४-०२-०१",
     area: "महाराष्ट्र राज्य",
@@ -45,7 +45,7 @@ const STATE_SCHEMES: Scheme[] = [
 
 // ─── Central Schemes Data ─────────────────────────────────────────────────────
 const CENTRAL_SCHEMES: Scheme[] = [
-   {
+  {
     id: 1,
     name: "प्रधानमंत्री आवास योजना (ग्रामीण)",
     date: "२०२४-०१-१५",
@@ -78,6 +78,18 @@ const CENTRAL_SCHEMES: Scheme[] = [
     pdfFile: "PMKisan.pdf",
     pdfLabel: "PMKisan.pdf",
   },
+  {
+    id: 4,
+    name: "VBG-RAM-G (MGNREGA)",
+    date: "२०२३-१०-०५",
+    area: "संपूर्ण भारत (ग्रामीण)",
+    benefit: "वर्षाला किमान १०० दिवस रोजगार हमी. रोजंदारी सरकार-निर्धारित दराने दिली जाते. पैसे थेट बँक खात्यात जमा होतात.",
+    // eligibility: "१८ वर्षांवरील ग्रामीण नागरिक, जॉब कार्ड आवश्यक.",
+    howToApply: "ग्रामपंचायतीत अर्ज करून जॉब कार्ड मिळवा आणि कामासाठी नोंदणी करा.",
+    website: "https://nrega.nic.in",
+    pdfFile: "MNREGA.pdf",
+    pdfLabel: "MNREGA.pdf"
+  }
 ];
 
 // ─── Detail Modal ─────────────────────────────────────────────────────────────
@@ -244,6 +256,7 @@ interface DeptInfo {
   intro?: string;
   points: string[];
   contact?: string[];
+  note?: string;
   phone?: string;
   pdfFile?: string;
   pdfLabel?: string;
@@ -491,6 +504,7 @@ const PS_DEPARTMENTS: DeptInfo[] = [
       "महिलांसाठी विविध शासकीय योजनांची अंमलबजावणी.",
       "बालसंगोपन, प्रि-स्कूल शिक्षण व आरोग्य तपासणी.",
     ],
+    note: "ICDS विभागाच्या पर्यवेक्षीय अधिकारी यांची माहिती खालील PDF मध्ये उपलब्ध आहे.",
     pdfFile: "एकात्मिक बाल विकास सेवा विभाग.pdf",
     pdfLabel: "एकात्मिक बाल विकास सेवा विभाग.pdf",
   },
@@ -503,6 +517,7 @@ const PS_DEPARTMENTS: DeptInfo[] = [
       "पाणी गुणवत्ता तपासणी व देखरेख.",
       "हातपंप दुरुस्ती व देखभाल.",
     ],
+    note: "ग्रामीण पाणी पुरवठा उपविभागीय अधिकारी यांची माहिती खालील PDF उपलद्ध आहे.",
     pdfFile: "ग्रामीण पाणी पुरवठा उपविभाग.pdf",
     pdfLabel: "ग्रामीण पाणी पुरवठा उपविभाग.pdf",
   },
@@ -515,6 +530,7 @@ const PS_DEPARTMENTS: DeptInfo[] = [
       "शासकीय इमारतींची देखभाल व दुरुस्ती.",
       "निविदा प्रक्रिया व कामांचे तांत्रिक परीक्षण.",
     ],
+    note: "बांधकाम विभाग मधील क्षेत्रीयअधिकारी यांची माहिती खालील PDF मध्ये उपलद्धआहे.",
     pdfFile: "बांधकाम विभाग.pdf",
     pdfLabel: "बांधकाम विभाग.pdf",
   },
@@ -527,6 +543,7 @@ const PS_DEPARTMENTS: DeptInfo[] = [
       "दूध उत्पादन वाढीसाठी संकरित गोपालन, शेळी-मेंढी पालन योजना.",
       "कुक्कुटपालन, मत्स्यपालन विकास कार्यक्रम.",
     ],
+    note: "पशुसंवर्धन विभाग मधील क्षेत्रीय अधिकारी यांची माहिती खालील PDF मध्ये उपलद्ध आहे",
     pdfFile: "पशुसंवर्धन विभाग.pdf",
     pdfLabel: "पशुसंवर्धन विभाग.pdf",
   },
@@ -539,6 +556,7 @@ const PS_DEPARTMENTS: DeptInfo[] = [
       "साथरोग नियंत्रण, आरोग्य तपासणी शिबिरे.",
       "आरोग्य कर्मचाऱ्यांचे आस्थापनाविषयक कामकाज.",
     ],
+    note: "तालुक्यातील आरोग्य विभाग मधील क्षेत्रीय अधिकारी कर्मचारी यांची माहिती खालील PDF उपलद्ध आहे.",
     pdfFile: "तालुका आरोग्य विभाग पंचाय समिती संगमनेर कार्यरत कर्मचारी माहिती.pdf",
     pdfLabel: "तालुका आरोग्य विभाग कर्मचारी माहिती.pdf",
   },
@@ -551,6 +569,7 @@ const PS_DEPARTMENTS: DeptInfo[] = [
       "मध्यान्ह भोजन योजना (MDM) व्यवस्थापन.",
       "शैक्षणिक साहित्य, गणवेश, पाठ्यपुस्तक वितरण.",
     ],
+    note: "शिक्षण विभाग मधील क्षेत्रीय अधिकारी यांची माहिती खालीली PDF उपलद्ध आहे.",
     pdfFile: "शिक्षण.pdf",
     pdfLabel: "शिक्षण.pdf",
   },
@@ -563,6 +582,7 @@ const PS_DEPARTMENTS: DeptInfo[] = [
       "ग्रामपंचायतींना अनुदान वाटप.",
       "लोकनियुक्त प्रतिनिधींना प्रशिक्षण.",
     ],
+    note: "ग्रामपंचायत विभाग मधील क्षेत्रीय अधिकारी माहिती खालील PDF मध्ये उपलद्ध आहे.",
     pdfFile: "ग्रामपंचायत विभाग.pdf",
     pdfLabel: "ग्रामपंचायत विभाग.pdf",
   },
@@ -575,6 +595,7 @@ const PS_DEPARTMENTS: DeptInfo[] = [
       "जलसंधारण व मृद संधारण कामे.",
       "उप विभागीय जलसंधारण अधिकाऱ्यांचे नियंत्रण.",
     ],
+    note: "लघुपाटबंधारे विभाग मधील क्षेत्रीय अधिकारी यांची माहिती खालील PDF मध्ये उपलद्ध आहे",
     pdfFile: "लघुपाठबंधारे विभाग.pdf",
     pdfLabel: "लघुपाठबंधारे विभाग.pdf",
   },
@@ -626,24 +647,32 @@ const DeptAccordion: React.FC<{ dept: DeptInfo; defaultOpen?: boolean }> = ({
             </div>
           )}
           {dept.pdfFile && (
-            <div className="mt-4 pt-4 border-t border-gray-100 flex items-center gap-3">
+            <div className="mt-4 pt-4 border-t border-gray-100">
 
-              <a
-                href={`/pdfs/${dept.pdfFile}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs font-bold transition-colors"
-              >
-                <Eye size={14} /> PDF पहा
-              </a>
+              {dept.note && (
+                <p className="text-sm text-gray-600 mb-2 font-bold">
+                  {dept.note}
+                </p>
+              )}
 
-              <a
-                href={`/pdfs/${dept.pdfFile}`}
-                download={dept.pdfLabel ?? dept.pdfFile}
-                className="inline-flex items-center gap-1.5 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg text-xs font-bold transition-colors"
-              >
-                <Download size={14} /> PDF डाउनलोड करा
-              </a>
+              <div className="flex items-center gap-3">
+                <a
+                  href={`/pdfs/${dept.pdfFile}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs font-bold transition-colors"
+                >
+                  <Eye size={14} /> PDF पहा
+                </a>
+
+                <a
+                  href={`/pdfs/${dept.pdfFile}`}
+                  download={dept.pdfLabel ?? dept.pdfFile}
+                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg text-xs font-bold transition-colors"
+                >
+                  <Download size={14} /> PDF डाउनलोड करा
+                </a>
+              </div>
 
             </div>
           )}
@@ -757,22 +786,54 @@ const RtsSection = () => {
 
 const ServicesSection = () => (
   <ContentPage title="नागरी सुविधा केंद्र">
-    <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-6">
-      <h3 className="text-base font-extrabold text-blue-900 mb-3">नागरी सुविधा केंद्र</h3>
-      <p className="text-sm text-gray-700 leading-relaxed">
-        कॉमन सर्व्हिस सेंटर (सीएससी) हे ग्रामीण भागात असलेले सेवा केंद्र आहेत. या केंद्रांमधून
-        नागरिकांना विविध सरकारी सेवा उपलब्ध होतात. जसे की आधार कार्ड बनवणे, बँक खाते उघडणे,
-        विमा काढणे, बिल भरणे, पासपोर्ट, पॅनकार्ड बनवणे आणि इतर अनेक सेवा. या केंद्रांमुळे
-        ग्रामीण भागातील नागरिकांना सरकारी सेवा सहज उपलब्ध होतात आणि त्यांचे जीवन सुलभ होते.
-      </p>
-      <a
-        href="https://digitalseva.csc.gov.in/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-1 mt-4 text-sm text-blue-600 hover:underline font-semibold"
-      >
-        भेट : https://digitalseva.csc.gov.in/ <ExternalLink size={13} />
-      </a>
+    <div className="rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+      <div className="bg-white px-4 py-4">
+
+        <p className="text-sm text-gray-700 leading-relaxed">
+          कॉमन सर्व्हिस सेंटर (सीएससी) हे ग्रामीण भागात असलेले सेवा केंद्र आहेत. या केंद्रांमधून
+          नागरिकांना विविध सरकारी सेवा उपलब्ध होतात. जसे की आधार कार्ड बनवणे, बँक खाते उघडणे,
+          विमा काढणे, बिल भरणे, पासपोर्ट, पॅनकार्ड बनवणे आणि इतर अनेक सेवा. या केंद्रांमुळे
+          ग्रामीण भागातील नागरिकांना सरकारी सेवा सहज उपलब्ध होतात आणि त्यांचे जीवन सुलभ होते.
+        </p>
+
+        <a
+          href="https://digitalseva.csc.gov.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1 mt-3 text-sm text-blue-600 hover:underline font-semibold"
+        >
+          भेट : https://digitalseva.csc.gov.in/ <ExternalLink size={13} />
+        </a>
+
+        <div className="mt-5 pt-4 border-t border-gray-300">
+          <p className="text-sm font-semibold text-gray-800 mb-1">
+            माहितीचा अधिकार अधिनियम २००५
+          </p>
+          <p className="text-xs text-gray-600 mb-3">
+            कलम ४ अन्वये १ ते १७ बाबींची माहिती खालील PDF मध्ये उपलब्ध आहे.
+          </p>
+
+          <div className="flex items-center gap-3">
+            <a
+              href="/pdfs/1 to 17.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs font-bold transition-colors"
+            >
+              <Eye size={14} /> PDF पहा
+            </a>
+
+            <a
+              href="/pdfs/1 to 17.pdf"
+              download="1 to 17.pdf"
+              className="inline-flex items-center gap-1.5 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg text-xs font-bold transition-colors"
+            >
+              <Download size={14} /> PDF डाउनलोड करा
+            </a>
+          </div>
+        </div>
+
+      </div>
     </div>
   </ContentPage>
 );
@@ -945,21 +1006,21 @@ const DOC_CATEGORIES: DocCategory[] = [
   //     },
   //   ],
   // },
-  {
-    label: "परिपत्रके / सूचना",
-    items: [
-      {
-        title: "खाते प्रमुख व विकास अधिकारी यांना प्रदान केलेले अधिकार (सन 2016 ते सन 2020 पर्यंत सुधारित)",
-        pdfFile: "Adhikar_2016_2020.pdf",
-        size: "6 MB",
-      },
-      {
-        title: "कुणबी नोंद ",
-        pdfFile: "Kumbhi_Nonan.pdf",
-        size: "2 MB",
-      }
-    ],
-  },
+  // {
+  //   label: "परिपत्रके / सूचना",
+  //   items: [
+  //     {
+  //       title: "खाते प्रमुख व विकास अधिकारी यांना प्रदान केलेले अधिकार (सन 2016 ते सन 2020 पर्यंत सुधारित)",
+  //       pdfFile: "Adhikar_2016_2020.pdf",
+  //       size: "6 MB",
+  //     },
+  //     {
+  //       title: "कुणबी नोंद ",
+  //       pdfFile: "Kumbhi_Nonan.pdf",
+  //       size: "2 MB",
+  //     }
+  //   ],
+  // },
 ];
 
 export const Documents = () => {

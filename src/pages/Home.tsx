@@ -8,7 +8,7 @@ import qr2 from '../images/qr2.png';
 import qr3 from '../images/qr3.png';
 import image from '../images/image.jpeg';
 import khandgoanImage from '../images/khangoan.jpeg';
-import rameshwer from '../images/rameshwer.png';
+import rameshwer from '../images/rameshwer.jpeg';
 
 import marutitemple from '../images/marutitemple.png';
 
@@ -71,7 +71,7 @@ const STATIC_LEADERS = [
 ];
 
 const bannerSlides = [
-    {
+  {
     image: image,
     title: "माझी वसुंधरा अभियान",
     subtitle: "पर्यावरण संवर्धनासाठी उत्कृष्ट योगदान देणाऱ्यांचा सन्मान",
@@ -86,10 +86,10 @@ const bannerSlides = [
     title: "खंडगाव, संगमनेर",
     subtitle: "निसर्गरम्य ग्रामीण परिसर",
   },
-    {
-      image: rameshwer,
-      title: "श्री रामेश्वर मंदिर, धांदरफळ",
-      subtitle: "प्राचीन धार्मिक वारसा",
+  {
+    image: rameshwer,
+    title: "श्री रामेश्वर मंदिर, धांदरफळ",
+    subtitle: "प्राचीन धार्मिक वारसा",
   },
   {
     image: marutitemple,
@@ -134,18 +134,18 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
     <div className="flex flex-col min-h-screen">
 
       <section className="flex justify-center mt-10">
-        <div className="relative w-[90%] md:w-[80%] h-[300px] md:h-[400px] overflow-hidden rounded-[50px] md:rounded-[80px] shadow-lg bg-gray-100">
+        <div className="relative w-[100%] md:w-[80%] h-[350px] md:h-[450px] overflow-hidden rounded-[50px] md:rounded-[80px] shadow-lg bg-gray-100">
 
           {bannerSlides.map((slide, idx) => (
             <div
               key={idx}
-              className="absolute inset-0 transition-opacity duration-1000"
+              className="absolute inset-0 transition-opacity duration-1000 flex items-center justify-center bg-gray-100"
               style={{ opacity: idx === currentSlide ? 1 : 0 }}
             >
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="w-full h-full object-contain object-center"
+                className="w-full h-full object-contain"
               />
             </div>
           ))}
@@ -157,7 +157,7 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
-                className="text-white max-w-xl"
+                className="text-white max-w-2xl"
               >
                 {/* <h2 className="text-3xl md:text-5xl font-bold mb-2 leading-tight">
                 पंचायत समिती{gpInfo?.TALUKA ? ` ${gpInfo.TALUKA}` : " संगमनेर"} मध्ये आपले स्वागत आहे
@@ -248,8 +248,8 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
                     />
                   )}
                   <h4 className="text-[12px] font-bold text-center text-gray-800 group-hover:text-blue-gov">
-                          {item.title}
-                        </h4>
+                    {item.title}
+                  </h4>
                   {/* <p className="text-[11px] text-gray-500 mt-1 font-bold">
                           प्रकाशित दिनांक: {item.published} | श्रेणी: {item.category}
                         </p> */}
@@ -284,7 +284,7 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
                 <iframe
                   src="https://maps.google.com/maps?q=19.5744681,74.2201134&output=embed"
                   width="100%"
-                  height="200"
+                  height="250"
                   className="rounded border-0"
                   allowFullScreen
                   loading="lazy"
@@ -310,6 +310,7 @@ export const Home: React.FC<HomeProps> = ({ gpInfo }) => {
                   { name: 'महा-भूलेख', url: 'https://mahabhulekh.maharashtra.gov.in' },
                   { name: 'दिव्यांग पोर्टल', url: 'https://divyangsahayak.maharashtra.gov.in/' },
                   { name: 'उमेद पोर्टल', url: 'https://www.umed.in/' },
+                  { name: 'VBG-RAM-G (MGNREGA)', url: "https://nrega.dord.gov.in/MGNREGA_new/Nrega_home.aspx" },
 
                 ].map((link) => (
                   <a

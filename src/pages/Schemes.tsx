@@ -100,15 +100,17 @@ const CENTRAL_SCHEMES: Scheme[] = [
   },
   // {
   //   id: 4,
-  //   name: "मनरेगा (रोजगार हमी योजना)",
+  //   name: "VBG-RAM-G",
+  //   title: "ग्रामीण रोजगार हमी योजना",
   //   date: "२०२३-१०-०५",
-  //   area: "संपूर्ण भारत (ग्रामीण)",
-  //   benefit: "वर्षाला किमान १०० दिवस रोजगार हमी. रोजंदारी सरकार-निर्धारित दराने.",
-  //   howToApply: "ग्रामपंचायतीत जॉब कार्डसाठी अर्ज करावा.",
+  // area: "संपूर्ण भारत (ग्रामीण)",
+  // benefit: "वर्षाला किमान १०० दिवस रोजगार हमी. रोजंदारी सरकार-निर्धारित दराने दिली जाते. पैसे थेट बँक खात्यात जमा होतात.",
+  // eligibility: "१८ वर्षांवरील ग्रामीण नागरिक, जॉब कार्ड आवश्यक.",
+  //   howToApply: "ग्रामपंचायतीत अर्ज करून जॉब कार्ड मिळवा आणि कामासाठी नोंदणी करा.",
   //   website: "https://nrega.nic.in",
   //   pdfFile: "MNREGA.pdf",
-  //   pdfLabel: "MNREGA.pdf",
-  // },
+  //   pdfLabel: "MNREGA.pdf"
+  // }
 ];
 
 // ─── Detail Modal ─────────────────────────────────────────────────────────────
@@ -624,8 +626,8 @@ const RtsSection = () => {
             key={idx}
             onClick={() => setActiveTab(idx)}
             className={`px-4 py-2 rounded-full text-sm font-bold border transition-all ${activeTab === idx
-                ? 'bg-blue-900 text-white border-blue-900'
-                : 'bg-white text-gray-600 border-gray-300 hover:border-blue-900 hover:text-blue-900'
+              ? 'bg-blue-900 text-white border-blue-900'
+              : 'bg-white text-gray-600 border-gray-300 hover:border-blue-900 hover:text-blue-900'
               }`}
           >
             {cat.label}
@@ -915,8 +917,8 @@ export const Documents = () => {
             key={idx}
             onClick={() => setActiveTab(idx)}
             className={`px-4 py-2 rounded-full text-sm font-bold border transition-all ${activeTab === idx
-                ? 'bg-blue-900 text-white border-blue-900'
-                : 'bg-white text-gray-600 border-gray-300 hover:border-blue-900 hover:text-blue-900'
+              ? 'bg-blue-900 text-white border-blue-900'
+              : 'bg-white text-gray-600 border-gray-300 hover:border-blue-900 hover:text-blue-900'
               }`}
           >
             {cat.label}
