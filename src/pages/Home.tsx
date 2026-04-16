@@ -83,7 +83,7 @@ const bannerSlides = [
   },
   {
     image: khandgoanImage,
-    title: "खंडगाव, संगमनेर",
+    title: "खांडगाव, संगमनेर",
     subtitle: "निसर्गरम्य ग्रामीण परिसर",
   },
   {
